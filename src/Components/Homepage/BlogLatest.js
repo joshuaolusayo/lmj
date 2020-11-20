@@ -17,7 +17,7 @@ const BlogLatest = () => {
 							voluptate! Nulla reiciendis placeat, iusto in explicabo at quisquam tenetur, nemo magni laboriosam sed. Eum, vel
 							voluptatum. Eligendi temporibus aspernatur assumenda? Eius maxime facilis quod?...
 						</p>
-						<Link to="/">
+						<Link to="/blog-article">
 							<button className="btn btn-outline-primary">Read more</button>
 						</Link>
 					</div>

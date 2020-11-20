@@ -352,6 +352,19 @@ body {
 			line-height: 30px;
 		}
 	}
+
+	.recent {
+		a {
+			&:hover {
+				text-decoration: none;
+				
+				.card {
+					transition: all 300ms ease-in;
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
 }
 
 .contact {

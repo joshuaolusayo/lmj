@@ -18,26 +18,26 @@ const Footer = () => {
 						</p>
 						<p className="pr-lg-5">
 							Follow us:&nbsp;
-							<a href="http://www.facebook.com" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+							<a href="http://www.facebook.com/lamijuakala" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
 								<i className="fa fa-facebook"></i>
 							</a>
-							<a href="http://www.instagram.com" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+							<a href="http://www.instagram.com/lamijuakala" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
 								<i className="fa fa-instagram"></i>
 							</a>
-							<a href="http://www.twitter.com" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+							<a href="http://www.twitter.com/lamijuakala" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
 								<i className="fa fa-twitter"></i>
 							</a>
 						</p>
 					</div>
 					<div className="col-lg-3 d-flex flex-column justify-content-between mt-5 mt-lg-0">
 						<h3 className="text-light">Quick Links</h3>
-						<Link to="/" className="text-muted mt-3">
+						<Link to="/about" className="text-muted mt-3">
 							About LMJ
 						</Link>
-						<Link to="/" className="text-muted mt-3">
+						<Link to="/blog" className="text-muted mt-3">
 							Blog
 						</Link>
-						<Link to="/" className="text-muted mt-3">
+						<Link to="/contact" className="text-muted mt-3">
 							Contact
 						</Link>
 					</div>
