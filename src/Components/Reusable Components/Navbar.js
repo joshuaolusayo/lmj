@@ -16,7 +16,9 @@ const NavBar = () => {
 					aria-controls="collapsibleNavId"
 					aria-expanded="false"
 					aria-label="Toggle navigation"
-				></button>
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
 				<div className="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
 					<ul className="navbar-nav mr-auto mr-md-0">
 						<li className="nav-item">
@@ -35,7 +37,7 @@ const NavBar = () => {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link text-dark d-inline-block p-4" to="/">
+							<Link className="nav-link text-dark d-inline-block p-4" to="/contact">
 								Contact
 							</Link>
 						</li>

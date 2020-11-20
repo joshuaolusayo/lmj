@@ -16,9 +16,9 @@ const Article = () => {
 				</div>
 			</div>
 
-			<div className="container my-8">
-				<div className="row">
-					<div className="col-md-8 mx-auto">
+			<div className="container mt-5 mb-8 px-2 px-sm-auto">
+				<div className="row no-gutters">
+					<div className="w-100">
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat omnis porro, quam suscipit nobis minus ipsum
 							tenetur excepturi officiis impedit eum, molestias numquam, odit voluptatem magnam voluptatum. Dignissimos ipsum,
@@ -69,7 +69,7 @@ const Article = () => {
 							</p>
 						</div>
 
-						<div className="mt-8 d-flex flex-column justify-content-center align-items-center share">
+						<div className="mt-5 d-flex flex-column justify-content-center align-items-center share">
 							<h4 className="mb-3">Share this post</h4>
 							<div>
 								<a href="javascript;;" className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary">

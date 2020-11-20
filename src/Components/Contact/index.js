@@ -1,12 +1,12 @@
 import React, { lazy, Suspense } from "react";
 import { HashLoader } from "react-spinners";
-const NavBar = lazy(() => require("../Reusable Components/Navbar"));
-const Article = lazy(() => require("./Article"));
-const MoreArticles = lazy(() => require("./MoreArticles"));
-const Subscribe = lazy(() => require("../Reusable Components/Subscribe"));
-const Footer = lazy(() => require("../Reusable Components/Footer"));
 
-const BlogArticle = () => {
+const NavBar = lazy(() => require("../Reusable Components/Navbar"));
+const ContactPane = lazy(() => require("./ContactPane"));
+const Footer = lazy(() => require("../Reusable Components/Footer"));
+const ScrollToTop = lazy(() => require("../Reusable Components/ScrollToTop"));
+
+const Contact = () => {
 	return (
 		<Suspense
 			fallback={
@@ -15,15 +15,14 @@ const BlogArticle = () => {
 				</div>
 			}
 		>
-			<div className="blog-article">
+			<div className="contact">
 				<NavBar />
-				<Article />
-				<MoreArticles />
-				<Subscribe />
+				<ContactPane />
 				<Footer />
+				<ScrollToTop />
 			</div>
 		</Suspense>
 	);
 };
 
-export default BlogArticle;
+export default Contact;

@@ -72,6 +72,23 @@ body {
   height: auto;
 }
 
+.navbar .link,
+.footer .link {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  color: #000;
+  background: #1c3ae3;
+  transition: all 300ms ease-in;
+}
+
+.navbar .link:hover,
+.footer .link:hover {
+  background: #fff;
+  color: #1c3ae3;
+}
+
 .my-6 {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -84,6 +101,10 @@ body {
 
 .mt-8 {
   margin-top: 8rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
 }
 
 .py-6 {
@@ -275,20 +296,6 @@ body {
   filter: grayscale(100%);
 }
 
-.blog .subscribe input:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-.blog .subscribe #submit {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.blog .subscribe #submit:hover {
-  background: #000 !important;
-}
-
 .blog-article .article .banner {
   height: 600px;
   background-size: cover !important;
@@ -300,6 +307,16 @@ body {
   line-height: 30px;
 }
 
+.contact .contact-pane i {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+}
+
 #scrollTop {
   position: fixed;
   right: 20px;
@@ -308,4 +325,18 @@ body {
   height: 50px;
   line-height: 50px;
   text-align: center;
+}
+
+.subscribe input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.subscribe #submit {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.subscribe #submit:hover {
+  background: #000 !important;
 }

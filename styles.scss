@@ -77,6 +77,21 @@ body {
 		width: 80px;
 		height: auto;
 	}
+
+	.link {
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		font-size: 16px;
+		color: #000;
+		background: $primary-col;
+		transition: all 300ms ease-in;
+
+		&:hover {
+			background: #fff;
+			color: $primary-col;
+		}
+	}
 }
 
 .my-6 {
@@ -91,6 +106,10 @@ body {
 
 .mt-8 {
 	margin-top: 8rem;
+}
+
+.mb-8 {
+	margin-bottom: 8rem;
 }
 
 .py-6 {
@@ -276,7 +295,7 @@ body {
 		@media screen and (min-width: 567px) {
 			column-count: 2 !important;
 		}
-		
+
 		@media screen and (min-width: 992px) {
 			column-count: 3 !important;
 		}
@@ -290,24 +309,6 @@ body {
 				img {
 					filter: grayscale(100%);
 				}
-			}
-		}
-	}
-
-	.subscribe {
-		input {
-			&:focus {
-				box-shadow: none;
-				outline: none;
-			}
-		}
-
-		#submit {
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-
-			&:hover {
-				background: #000 !important;
 			}
 		}
 	}
@@ -330,6 +331,20 @@ body {
 	}
 }
 
+.contact {
+	.contact-pane {
+		i {
+			font-size: 16px;
+			width: 16px;
+			height: 16px;
+			line-height: 16px;
+			display: inline-block;
+			text-align: center;
+			margin-right: 5px;
+		}
+	}
+}
+
 #scrollTop {
 	position: fixed;
 	right: 20px;
@@ -338,4 +353,22 @@ body {
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
+}
+
+.subscribe {
+	input {
+		&:focus {
+			box-shadow: none;
+			outline: none;
+		}
+	}
+
+	#submit {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+
+		&:hover {
+			background: #000 !important;
+		}
+	}
 }

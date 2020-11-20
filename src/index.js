@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import AboutPage from "./Components/About";
 import Blog from "./Components/Blog";
 import BlogArticle from "./Components/BlogArticle";
+import Contact from "./Components/Contact";
 import Homepage from "./Components/Homepage";
 
 import "./styles.css";
@@ -15,6 +16,7 @@ ReactDOM.render(
 			<Route exact path="/about" component={AboutPage}></Route>
 			<Route exact path="/blog" component={Blog}></Route>
 			<Route exact path="/blog-article" component={BlogArticle}></Route>
+			<Route exact path="/contact" component={Contact}></Route>
 		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById("root")

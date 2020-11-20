@@ -1,22 +1,31 @@
-import React from 'react'
-import Footer from '../Reusable Components/Footer'
-import NavBar from '../Reusable Components/Navbar'
-import Banner from './Banner'
-import BlogSection from './BlogSection'
-import Subscribe from './Subscribe'
-import ScrollToTop from '../Reusable Components/ScrollToTop'
+import React, { lazy, Suspense } from "react";
+import { HashLoader } from "react-spinners";
+const Footer = lazy(() => require("../Reusable Components/Footer"));
+const NavBar = lazy(() => require("../Reusable Components/Navbar"));
+const Banner = lazy(() => require("./Banner"));
+const BlogSection = lazy(() => require("./BlogSection"));
+const Subscribe = lazy(() => require("../Reusable Components/Subscribe"));
+const ScrollToTop = lazy(() => require("../Reusable Components/ScrollToTop"));
 
 const Blog = () => {
-    return (
-        <div className="blog">
-            <NavBar />
-            <Banner />
-            <BlogSection />
-            <Subscribe />
-            <Footer />
-            <ScrollToTop />
-        </div>
-    )
-}
+	return (
+		<Suspense
+			fallback={
+				<div className="fallback">
+					<HashLoader color={"#1c3ae3"} loading />
+				</div>
+			}
+		>
+			<div className="blog">
+				<NavBar />
+				<Banner />
+				<BlogSection />
+				<Subscribe />
+				<Footer />
+				<ScrollToTop />
+			</div>
+		</Suspense>
+	);
+};
 
-export default Blog
+export default Blog;

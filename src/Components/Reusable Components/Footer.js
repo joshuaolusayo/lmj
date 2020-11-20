@@ -6,16 +6,27 @@ const Footer = () => {
 		<div className="container-fluid bg-black text-light footer pt-lg-5">
 			<div className="container py-5">
 				<div className="row align-items-stretch justify-content-between">
-					<div className="col-lg-6 d-flex flex-column justify-content-between mt-5 mt-lg-0">
+					<div className="col-lg-6 d-flex flex-column justify-content-between mt-5 mt-lg-0 text-muted">
 						<div>
 							<div className="text-secondary font-weight-bold mb-3">
 								<img className="logo" src="/images/logo-white-bg.jpeg" alt="LMJ Logo" />
 							</div>
 						</div>
-						<p className="text-muted pr-lg-5">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem ipsa voluptatibus ab
-							temporibus illo accusamus hic voluptates distinctio, obcaecati voluptate quidem quam ullam dignissimos odit
-							repudiandae voluptas error dicta!
+						<p className="pr-lg-5">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatem sequi asperiores illo id facere esse
+							cupiditate commodi, nobis non?
+						</p>
+						<p className="pr-lg-5">
+							Follow us:&nbsp;
+							<a href="http://www.facebook.com" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+								<i className="fa fa-facebook"></i>
+							</a>
+							<a href="http://www.instagram.com" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+								<i className="fa fa-instagram"></i>
+							</a>
+							<a href="http://www.twitter.com" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+								<i className="fa fa-twitter"></i>
+							</a>
 						</p>
 					</div>
 					<div className="col-lg-3 d-flex flex-column justify-content-between mt-5 mt-lg-0">

@@ -11,7 +11,7 @@ const AboutPage = () => {
 		<Suspense
 			fallback={
 				<div className="fallback">
-					<HashLoader loading />
+					<HashLoader color={'#1c3ae3'} loading />
 				</div>
 			}
 		>
