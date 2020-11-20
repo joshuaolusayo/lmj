@@ -5,6 +5,7 @@ import AboutPage from "./Components/About";
 import Blog from "./Components/Blog";
 import BlogArticle from "./Components/BlogArticle";
 import Contact from "./Components/Contact";
+import Gallery from "./Components/Gallery";
 import Homepage from "./Components/Homepage";
 
 import "./styles.css";
@@ -17,6 +18,7 @@ ReactDOM.render(
 			<Route exact path="/blog" component={Blog}></Route>
 			<Route exact path="/blog-article" component={BlogArticle}></Route>
 			<Route exact path="/contact" component={Contact}></Route>
+			<Route exact path="/gallery" component={Gallery}></Route>
 		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById("root")

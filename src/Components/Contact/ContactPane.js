@@ -26,15 +26,15 @@ const ContactPane = () => {
 									</p>
 									<p className="d-flex align-items-center">
 										<i className="fa fa-facebook text-secondary" aria-hidden="true"></i>
-										<span className="text-light">Lamiju Akala</span>
+										<span className="text-light">Hon. Olamijuwonlo A. Alao JP</span>
 									</p>
 									<p className="d-flex align-items-center">
 										<i className="fa fa-instagram text-secondary" aria-hidden="true"></i>
-										<span className="text-light">Lamiju Akala</span>
+										<span className="text-light">@lamijuakala</span>
 									</p>
 									<p className="d-flex align-items-center">
 										<i className="fa fa-twitter text-secondary" aria-hidden="true"></i>
-										<span className="text-light">Lamiju Akala</span>
+										<span className="text-light">@lamijuakala</span>
 									</p>
 								</div>
 							</div>

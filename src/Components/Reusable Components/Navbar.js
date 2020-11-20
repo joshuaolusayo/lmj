@@ -56,11 +56,11 @@ const NavBar = () => {
 								Blog
 							</Link>
 						</li>
-						{/* <li className="nav-item">
+						<li className="nav-item">
 							<Link className="nav-link text-dark d-inline-block p-4" to="/gallery">
 								Gallery
 							</Link>
-						</li> */}
+						</li>
 						<li className="nav-item">
 							<Link className="nav-link text-dark d-inline-block p-4" to="/contact">
 								Contact
