@@ -30,44 +30,44 @@ const BlogLatest = () => {
 						<h2 className="text-light font-weight-bold">Blog News</h2>
 						<div className="row">
 							<div className="col-md-6 col-lg-4 my-3">
-								<div class="card shadow">
-									<img class="card-img-top" src="/images/lmj-portrait.jpg" alt="LMJ Portrait" />
-									<div class="card-body">
-										<h4 class="card-title font-weight-bold">Politics</h4>
-										<p class="card-text">
+								<div className="card shadow">
+									<img className="card-img-top" src="/images/lmj-portrait.jpg" alt="LMJ Portrait" />
+									<div className="card-body">
+										<h4 className="card-title font-weight-bold">Politics</h4>
+										<p className="card-text">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit voluptatum, unde nesciunt
 											enim sed asperiores nam, impedit non, nobis blanditiis corporis sequi odio? Nobis autem quos
 											voluptatibus in quia.
 										</p>
-										<Link className="bg-primary__light text-secondary__light btn more">Read more</Link>
+										<Link to="/" className="bg-primary__light text-secondary__light btn more">Read more</Link>
 									</div>
 								</div>
 							</div>
 							<div className="col-md-6 col-lg-4 my-3">
-								<div class="card shadow">
-									<img class="card-img-top" src="/images/lmj-pic.jpg" alt="LMJ Portrait" />
-									<div class="card-body">
-										<h4 class="card-title font-weight-bold">Politics</h4>
-										<p class="card-text">
+								<div className="card shadow">
+									<img className="card-img-top" src="/images/lmj-pic.jpg" alt="LMJ Portrait" />
+									<div className="card-body">
+										<h4 className="card-title font-weight-bold">Politics</h4>
+										<p className="card-text">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit voluptatum, unde nesciunt
 											enim sed asperiores nam, impedit non, nobis blanditiis corporis sequi odio? Nobis autem quos
 											voluptatibus in quia.
 										</p>
-										<Link className="bg-primary__light text-secondary__light btn more">Read more</Link>
+										<Link to="/" className="bg-primary__light text-secondary__light btn more">Read more</Link>
 									</div>
 								</div>
 							</div>
 							<div className="col-md-6 col-lg-4 my-3">
-								<div class="card shadow">
-									<img class="card-img-top" src="/images/lmj-portrait.jpg" alt="LMJ Portrait" />
-									<div class="card-body">
-										<h4 class="card-title font-weight-bold">Politics</h4>
-										<p class="card-text">
+								<div className="card shadow">
+									<img className="card-img-top" src="/images/lmj-portrait.jpg" alt="LMJ Portrait" />
+									<div className="card-body">
+										<h4 className="card-title font-weight-bold">Politics</h4>
+										<p className="card-text">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit voluptatum, unde nesciunt
 											enim sed asperiores nam, impedit non, nobis blanditiis corporis sequi odio? Nobis autem quos
 											voluptatibus in quia.
 										</p>
-										<Link className="bg-primary__light text-secondary__light btn more">Read more</Link>
+										<Link to="/" className="bg-primary__light text-secondary__light btn more">Read more</Link>
 									</div>
 								</div>
 							</div>

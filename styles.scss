@@ -98,6 +98,13 @@ body {
 	padding-bottom: 6rem;
 }
 
+.fallback {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .homepage {
 	.slides {
 		height: 600px;

@@ -7,7 +7,7 @@ const AboutLMJ = () => {
 				<h1 className="text-center font-weight-bold text-light mb-0 py-5">Meet LMJ</h1>
 			</div>
 			<div className="container z-1">
-				<img className="coverImg mb-3" src="/images/lmj003.jpg" alt="LMJ at office" loading="lazy" />
+				<img className="coverImg mb-3" src="/images/lmj003.JPG" alt="LMJ at office" loading="lazy" />
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae iste veniam possimus porro nihil, eveniet,
 					consequatur veritatis error mollitia ratione corrupti. Ab ducimus distinctio veniam quod, iste ut beatae tenetur
@@ -69,7 +69,7 @@ const AboutLMJ = () => {
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center">
-						<img className="rounded-circle abtImg d-block mx-auto" src="/images/lmj005.jpg" alt="LMJ" loading="lazy" />
+						<img className="rounded-circle abtImg d-block mx-auto" src="/images/lmj005.JPG" alt="LMJ" loading="lazy" />
 					</div>
 				</div>
 
@@ -96,7 +96,7 @@ const AboutLMJ = () => {
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">
 						<img
 							className="rounded-circle abtImg d-block mx-auto"
-							src="/images/lmj004.jpg"
+							src="/images/lmj004.JPG"
 							alt="LMJ at office"
 							loading="lazy"
 						/>
@@ -126,7 +126,7 @@ const AboutLMJ = () => {
 					<div className="col-lg-4 d-flex justify-content-center align-items-center">
 						<img
 							className="rounded-circle abtImg d-block mx-auto"
-							src="/images/lmj006.jpg"
+							src="/images/lmj006.JPG"
 							alt="LMJ political career"
 							loading="lazy"
 						/>

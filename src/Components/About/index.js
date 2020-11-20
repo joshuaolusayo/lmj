@@ -1,18 +1,28 @@
-import React from 'react'
-import Footer from '../Reusable Components/Footer'
-import NavBar from '../Reusable Components/Navbar'
-import ScrollToTop from '../Reusable Components/ScrollToTop'
-import AboutLMJ from './AboutLMJ'
+import React, { lazy, Suspense } from "react";
+import { HashLoader } from "react-spinners";
+
+const Footer = lazy(() => import("../Reusable Components/Footer"));
+const NavBar = lazy(() => import("../Reusable Components/Navbar"));
+const ScrollToTop = lazy(() => import("../Reusable Components/ScrollToTop"));
+const AboutLMJ = lazy(() => import("./AboutLMJ"));
 
 const AboutPage = () => {
-    return (
-        <div className="aboutPage">
-            <NavBar />
-            <AboutLMJ />
-            <Footer />
-            <ScrollToTop />
-        </div>
-    )
-}
+	return (
+		<Suspense
+			fallback={
+				<div className="fallback">
+					<HashLoader loading />
+				</div>
+			}
+		>
+			<div className="aboutPage">
+				<NavBar />
+				<AboutLMJ />
+				<Footer />
+				<ScrollToTop />
+			</div>
+		</Suspense>
+	);
+};
 
-export default AboutPage
+export default AboutPage;
