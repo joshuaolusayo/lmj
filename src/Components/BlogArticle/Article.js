@@ -5,7 +5,7 @@ const Article = () => {
 		<div className="container-fluid article px-0">
 			<div
 				className="banner"
-				style={{ background: `linear-gradient(rgba(0,0,0.2), rgba(0,0,0,0.2)), url('/images/lmj013.jpg') 15% 30%` }}
+				style={{ background: `linear-gradient(rgba(0,0,0.2), rgba(0,0,0,0.2)), url('/images/lmj013.JPG') 15% 30%` }}
 			>
 				<div className="container d-flex flex-column justify-content-center align-items-center h-100 text-light">
 					<span className="text-uppercase mb-3">Politics</span>
