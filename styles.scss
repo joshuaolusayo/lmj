@@ -71,6 +71,29 @@ body {
 	color: #000;
 }
 
+.navbar {
+	.navbar-toggler {
+		&:focus {
+			outline: none;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		.dropdown-menu {
+			position: relative;
+		}
+
+		.navbar-collapse {
+			height: calc(100vh - 70px);
+		}
+
+		.navbar-nav {
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
 .navbar,
 .footer {
 	.logo {
@@ -132,7 +155,7 @@ body {
 			object-fit: cover;
 			height: 600px;
 			width: 100%;
-			object-position: 0% 30%;
+			object-position: 40% 30%;
 		}
 
 		.slick-prev,
@@ -342,6 +365,18 @@ body {
 			text-align: center;
 			margin-right: 5px;
 		}
+	}
+
+	input,
+	textarea {
+		&:focus {
+			box-shadow: none;
+			border-color: $primary-col;
+		}
+	}
+
+	textarea {
+		resize: none;
 	}
 }
 

@@ -29,7 +29,7 @@ const Slides = () => {
 					</div>
 				</div>
 				<div className="slide">
-					<img src="/images/lmj001.jpg" alt="LMJ" />
+					<img src="/images/lmj001.jpg" alt="LMJ" style={{ objectPosition: "0% 30%" }} />
 					<div className="overlay w-100 rounded-top text-center p-2 px-md-5 py-md-3 d-flex flex-column justify-content-center align-items-center text-light">
 						<>
 							<span className="font-italic">Welcome to the official website of</span>

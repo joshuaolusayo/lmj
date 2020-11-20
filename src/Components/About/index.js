@@ -8,20 +8,20 @@ const AboutLMJ = lazy(() => import("./AboutLMJ"));
 
 const AboutPage = () => {
 	return (
-		<Suspense
-			fallback={
-				<div className="fallback">
-					<HashLoader color={'#1c3ae3'} loading />
-				</div>
-			}
-		>
-			<div className="aboutPage">
+		<div className="aboutPage">
+			<Suspense
+				fallback={
+					<div className="fallback">
+						<HashLoader color={"#1c3ae3"} loading />
+					</div>
+				}
+			>
 				<NavBar />
 				<AboutLMJ />
 				<Footer />
 				<ScrollToTop />
-			</div>
-		</Suspense>
+			</Suspense>
+		</div>
 	);
 };
 

@@ -66,6 +66,23 @@ body {
   color: #000;
 }
 
+.navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: relative;
+  }
+  .navbar .navbar-collapse {
+    height: calc(100vh - 70px);
+  }
+  .navbar .navbar-nav {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .navbar .logo,
 .footer .logo {
   width: 80px;
@@ -127,7 +144,7 @@ body {
   object-fit: cover;
   height: 600px;
   width: 100%;
-  object-position: 0% 30%;
+  object-position: 40% 30%;
 }
 
 .homepage .slides .slick-prev,
@@ -315,6 +332,16 @@ body {
   display: inline-block;
   text-align: center;
   margin-right: 5px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  box-shadow: none;
+  border-color: #1c3ae3;
+}
+
+.contact textarea {
+  resize: none;
 }
 
 #scrollTop {

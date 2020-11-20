@@ -1,28 +1,28 @@
 import React, { lazy, Suspense } from "react";
 import { HashLoader } from "react-spinners";
-const NavBar = lazy(() => require("../Reusable Components/Navbar"));
-const Article = lazy(() => require("./Article"));
-const MoreArticles = lazy(() => require("./MoreArticles"));
-const Subscribe = lazy(() => require("../Reusable Components/Subscribe"));
-const Footer = lazy(() => require("../Reusable Components/Footer"));
+const NavBar = lazy(() => import("../Reusable Components/Navbar"));
+const Article = lazy(() => import("./Article"));
+const MoreArticles = lazy(() => import("./MoreArticles"));
+const Subscribe = lazy(() => import("../Reusable Components/Subscribe"));
+const Footer = lazy(() => import("../Reusable Components/Footer"));
 
 const BlogArticle = () => {
 	return (
-		<Suspense
-			fallback={
-				<div className="fallback">
-					<HashLoader color={"#1c3ae3"} loading />
-				</div>
-			}
-		>
-			<div className="blog-article">
+		<div className="blog-article">
+			<Suspense
+				fallback={
+					<div className="fallback">
+						<HashLoader color={"#1c3ae3"} loading />
+					</div>
+				}
+			>
 				<NavBar />
 				<Article />
 				<MoreArticles />
 				<Subscribe />
 				<Footer />
-			</div>
-		</Suspense>
+			</Suspense>
+		</div>
 	);
 };
 
