@@ -11,7 +11,7 @@ import Homepage from "./Components/Homepage";
 import "./styles.css";
 
 ReactDOM.render(
-	// <React.StrictMode>
+	<React.StrictMode>
 		<BrowserRouter>
 			<Route exact path="/" component={Homepage}></Route>
 			<Route exact path="/about" component={AboutPage}></Route>
@@ -19,7 +19,7 @@ ReactDOM.render(
 			<Route exact path="/blog-article" component={BlogArticle}></Route>
 			<Route exact path="/contact" component={Contact}></Route>
 			<Route exact path="/gallery" component={Gallery}></Route>
-		</BrowserRouter>,
-	// </React.StrictMode>,
+		</BrowserRouter>
+	</React.StrictMode>,
 	document.getElementById("root")
 );

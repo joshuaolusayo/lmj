@@ -1,9 +1,10 @@
 import React, { lazy, Suspense } from "react";
 import { HashLoader } from "react-spinners";
-import GalleryGrid from "./GalleryGrid";
+import Galleries from "./Galleries";
+// import GalleryGrid from "./GalleryGrid";
 
 const NavBar = lazy(() => import("../Reusable Components/Navbar"))
-// const Footer = lazy(() => import("../Reusable Components/Footer"))
+const Footer = lazy(() => import("../Reusable Components/Footer"))
 
 const Gallery = () => {
 	return (
@@ -16,8 +17,9 @@ const Gallery = () => {
 				}
 			>
 				<NavBar />
-                <GalleryGrid />
-                {/* <Footer /> */}
+				<Galleries />
+                {/* <GalleryGrid /> */}
+                <Footer />
 			</Suspense>
 		</div>
 	);
