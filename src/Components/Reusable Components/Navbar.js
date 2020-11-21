@@ -20,6 +20,7 @@ const NavBar = () => {
 		} else {
 			hideTargetElement();
 		}
+		
 		return () => {
 			hideTargetElement();
 			clearAllBodyScrollLocks();
