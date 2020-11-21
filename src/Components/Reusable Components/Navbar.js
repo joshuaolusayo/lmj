@@ -10,7 +10,6 @@ const NavBar = () => {
 	useEffect(() => {
 		if (show) {
 			document.querySelector('body').style.overflow = 'hidden';
-			console.log("it works");
 		} else {
 			document.querySelector('body').style.overflow = 'scroll';
 		}
