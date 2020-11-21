@@ -1,30 +1,23 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
 
 const NavBar = () => {
 	const [show, setShow] = useState(false);
 	const btn = useRef(null);
 
-	function showTargetElement() {
-		disableBodyScroll(btn);
-	}
-
-	function hideTargetElement() {
-		enableBodyScroll(btn);
-	}
+	
 
 	useEffect(() => {
 		if (show) {
-			showTargetElement();
+			document.querySelector('body').style.overflow = 'hidden';
+			console.log("it works");
 		} else {
-			hideTargetElement();
+			document.querySelector('body').style.overflow = 'scroll';
 		}
-		
-		return () => {
-			hideTargetElement();
-			clearAllBodyScrollLocks();
-		};
+
+		return (() => {
+			document.querySelector('body').style.overflow = 'scroll';
+		})
 	}, [show]);
 	return (
 		<header className="container-fluid px-0 shadow bg-transparent navbar">
