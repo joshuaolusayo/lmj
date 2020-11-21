@@ -2,6 +2,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+*::selection {
+  background: #1c3ae3;
+  color: #fff;
+}
+
 .bg-primary {
   background-color: #1c3ae3 !important;
 }

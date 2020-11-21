@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const NavBar = () => {
 	const [show, setShow] = useState(false);
+	const btn = useRef(null);
 
-	function disableScrolling() {
-		let x = window.scrollX;
-		let y = window.scrollY;
-		window.onscroll = function () {
-			window.scrollTo(x, y);
-		};
+	function showTargetElement() {
+		disableBodyScroll(btn);
 	}
 
-	function enableScrolling(){
-		window.onscroll=function(){};
+	function hideTargetElement() {
+		enableBodyScroll(btn)
 	}
 
 	useEffect(() => {
-		if (show) disableScrolling();
-		return (() => enableScrolling())
+		if (show) return showTargetElement();
+		hideTargetElement();
+		return (() => clearAllBodyScrollLocks())
 	}, [show])
 	return (
 		<header className="container-fluid px-0 shadow bg-transparent navbar">
@@ -35,6 +34,7 @@ const NavBar = () => {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 					id="button"
+					ref={btn}
 					onClick={() => setShow(!show)}
 				>
 					<span className="navbar-toggler-icon"></span>

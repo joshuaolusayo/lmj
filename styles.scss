@@ -7,6 +7,13 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
+* {
+	&::selection {
+		background: $primary-col;
+		color: #fff;
+	}
+}
+
 .bg-primary {
 	background-color: $primary-col !important;
 }
