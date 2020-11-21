@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
 
 const NavBar = () => {
 	const [show, setShow] = useState(false);
@@ -11,14 +11,20 @@ const NavBar = () => {
 	}
 
 	function hideTargetElement() {
-		enableBodyScroll(btn)
+		enableBodyScroll(btn);
 	}
 
 	useEffect(() => {
-		if (show) return showTargetElement();
-		hideTargetElement();
-		return (() => clearAllBodyScrollLocks())
-	}, [show])
+		if (show) {
+			showTargetElement();
+		} else {
+			hideTargetElement();
+		}
+		return () => {
+			hideTargetElement();
+			clearAllBodyScrollLocks();
+		};
+	}, [show]);
 	return (
 		<header className="container-fluid px-0 shadow bg-transparent navbar">
 			<nav className="container navbar navbar-expand-lg navbar-light px-2 py-0 px-lg-0 justify-content-between align-items-center">
