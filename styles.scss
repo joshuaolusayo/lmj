@@ -91,7 +91,7 @@ body {
 		}
 
 		.navbar-collapse {
-			height: calc(100vh - 70px);
+			height: calc(100vh - 83px);
 		}
 
 		.navbar-nav {
@@ -129,9 +129,16 @@ body {
 	margin-bottom: 6rem;
 }
 
-.my-8 {
-	margin-top: 8rem;
-	margin-bottom: 8rem;
+.my- {
+	&8 {
+		margin-top: 8rem;
+		margin-bottom: 8rem;
+	}
+
+	&lg-8 {
+		margin-top: 8rem;
+		margin-bottom: 8rem;
+	}
 }
 
 .mt-8 {
@@ -190,10 +197,10 @@ body {
 				transform: translate(0%, 0%);
 				font-size: 30px;
 				height: 600px;
-				background-color: rgba(0, 0, 0, 0.7);
+				background-color: rgba(0, 0, 0, 0.5);
 
 				.text-bold {
-					font-size: 40px;
+					font-size: 35px;
 				}
 			}
 		}
@@ -364,7 +371,7 @@ body {
 		a {
 			&:hover {
 				text-decoration: none;
-				
+
 				.card {
 					transition: all 300ms ease-in;
 					transform: scale(1.05);

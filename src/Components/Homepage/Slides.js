@@ -28,41 +28,15 @@ const Slides = () => {
 						</>
 					</div>
 				</div>
-				<div className="slide">
-					<img src="/images/lmj-with-others.jpg" alt="LMJ" />
-					<div className="overlay w-100 rounded-top text-center p-2 px-md-5 py-md-3 d-flex flex-column justify-content-center align-items-center text-light">
-						<>
-							<span className="font-italic">Welcome to the official website of</span>
-							<span className="font-weight-bold text-bold">Hon Olamijuwonlo Alao-Akala</span>
-						</>
-					</div>
-				</div>
+
 				<div className="slide">
 					<img src="/images/lmj002.JPG" alt="Lamiju" />
-					<div className="overlay w-100 rounded-top text-center p-2 px-md-5 py-md-3 d-flex flex-column justify-content-center align-items-center text-light">
-						<>
-							<span className="font-italic">Welcome to the official website of</span>
-							<span className="font-weight-bold text-bold">Hon Olamijuwonlo Alao-Akala</span>
-						</>
-					</div>
 				</div>
 				<div className="slide">
-					<img src="/images/lmj-with-osinbajo.JPG" alt="Lamiju with Osinbajo" />
-					<div className="overlay w-100 rounded-top text-center p-2 px-md-5 py-md-3 d-flex flex-column justify-content-center align-items-center text-light">
-						<>
-							<span className="font-italic">Welcome to the official website of</span>
-							<span className="font-weight-bold text-bold">Hon Olamijuwonlo Alao-Akala</span>
-						</>
-					</div>
+					<img src="/images/lmj003.JPG" alt="Lamiju with Osinbajo" />
 				</div>
 				<div className="slide">
 					<img src="/images/lmj-with-daddy.JPG" alt="LMJ with his father" />
-					<div className="overlay w-100 rounded-top text-center p-2 px-md-5 py-md-3 d-flex flex-column justify-content-center align-items-center text-light">
-						<>
-							<span className="font-italic">Welcome to the official website of</span>
-							<span className="font-weight-bold text-bold">Hon Olamijuwonlo Alao-Akala</span>
-						</>
-					</div>
 				</div>
 			</Slider>
 		</div>

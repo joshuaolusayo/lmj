@@ -9,6 +9,7 @@ import Gallery from "./Components/Gallery";
 import Homepage from "./Components/Homepage";
 
 import "./styles.css";
+import 'aos/dist/aos.css';
 
 ReactDOM.render(
 	<React.StrictMode>

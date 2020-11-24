@@ -5,18 +5,16 @@ const NavBar = () => {
 	const [show, setShow] = useState(false);
 	const btn = useRef(null);
 
-	
-
 	useEffect(() => {
 		if (show) {
-			document.querySelector('body').style.overflow = 'hidden';
+			document.querySelector("body").style.overflow = "hidden";
 		} else {
-			document.querySelector('body').style.overflow = 'scroll';
+			document.querySelector("body").style.overflow = "scroll";
 		}
 
-		return (() => {
-			document.querySelector('body').style.overflow = 'scroll';
-		})
+		return () => {
+			document.querySelector("body").style.overflow = "scroll";
+		};
 	}, [show]);
 	return (
 		<header className="container-fluid px-0 shadow bg-transparent navbar">
@@ -36,7 +34,7 @@ const NavBar = () => {
 					ref={btn}
 					onClick={() => setShow(!show)}
 				>
-					<span className="navbar-toggler-icon"></span>
+					{!show ? <span className="navbar-toggler-icon"></span> : <span>X</span>}
 				</button>
 				<div className="collapse navbar-collapse justify-content-lg-end" id="collapsibleNavId">
 					<ul className="navbar-nav mr-auto mr-md-0 h-100">

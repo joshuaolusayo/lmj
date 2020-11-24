@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const ContactPane = () => {
+	useEffect(() => {
+		AOS.init({ duration: 600, once: true });
+	});
+
 	return (
 		<div
 			className="container-fluid px-0 banner w-100 d-flex justify-content-center align-items-center contact-pane"
@@ -13,7 +18,7 @@ const ContactPane = () => {
 				<div className="row no-gutters">
 					<div className="col-md-8 col-lg-10 mx-auto bg-light px-0">
 						<div className="row w-100 h-100 flex-column flex-lg-row no-gutters">
-							<div className="col-lg-4 bg-primary h-100 d-none p-3 p-lg-4 my-auto d-lg-flex justify-content-center align-items-center">
+							<div className="col-lg-4 bg-primary h-100 d-none p-3 p-lg-4 my-auto d-lg-flex justify-content-center align-items-center" data-aos="fade-right">
 								<div>
 									<h2 className="text-light mb-4">Contact Us</h2>
 									<p className="d-flex align-items-center">

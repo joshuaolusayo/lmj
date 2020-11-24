@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const BlogLatest = () => {
 	return (
 		<div className="container-fluid px-0">
-			<div className="container my-5 blog-latest">
-				<h3 className="font-weight-bold">Latest blog post</h3>
+			<div className="container my-5 my-lg-8 blog-latest">
+				<h3 className="font-weight-bold mb-4">Latest blog post</h3>
 				<div className="row">
 					<div className="col-lg-6 mb-3 mb-lg-5">
 						<img className="w-100" src="/images/lmj02.jpg" alt="LMJ sitting with an elderly woman" />

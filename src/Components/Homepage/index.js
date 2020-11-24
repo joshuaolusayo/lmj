@@ -1,4 +1,5 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
 const NavBar = lazy(() => import("../Reusable Components/Navbar"));
@@ -9,6 +10,12 @@ const Footer = lazy(() => import("../Reusable Components/Footer"));
 const ScrollToTop = lazy(() => import("../Reusable Components/ScrollToTop"));
 
 const Homepage = () => {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
+	
 	return (
 		<div className="homepage">
 			<Suspense

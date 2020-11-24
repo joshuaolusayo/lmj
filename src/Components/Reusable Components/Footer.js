@@ -31,11 +31,17 @@ const Footer = () => {
 					</div>
 					<div className="col-lg-3 d-flex flex-column justify-content-between mt-5 mt-lg-0">
 						<h3 className="text-light">Quick Links</h3>
+						<Link to="/" className="text-muted mt-3">
+							Homepage
+						</Link>
 						<Link to="/about" className="text-muted mt-3">
 							About LMJ
 						</Link>
 						<Link to="/blog" className="text-muted mt-3">
 							Blog
+						</Link>
+						<Link to="/gallery" className="text-muted mt-3">
+							Gallery
 						</Link>
 						<Link to="/contact" className="text-muted mt-3">
 							Contact
@@ -46,8 +52,11 @@ const Footer = () => {
 						<a className="text-muted py-2 py-lg-auto" href="tel:+234 816 308 7542">
 							+234 816 308 7542
 						</a>
-						<a className="text-muted py-2 py-lg-auto" href="mailto:lmjalao@gmail.com">
-							lmjalao@gmail.com
+						<a className="text-muted py-2 py-lg-auto" href="mailto:info@lamijuakala.com">
+							info@lamijuakala.com
+						</a>
+						<a className="text-muted py-2 py-lg-auto" href="mailto:olamijuwonlo@gmail.com">
+							olamijuwonlo@gmail.com
 						</a>
 						<span className="text-muted py-2 py-lg-auto">Randa, Ogbomoso, Oyo state, Nigeria</span>
 					</div>

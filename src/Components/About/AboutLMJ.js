@@ -9,31 +9,30 @@ const AboutLMJ = () => {
 			<div className="container z-1">
 				<img className="coverImg mb-3" src="/images/lmj003.JPG" alt="LMJ at office" loading="lazy" />
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae iste veniam possimus porro nihil, eveniet,
-					consequatur veritatis error mollitia ratione corrupti. Ab ducimus distinctio veniam quod, iste ut beatae tenetur
-					eligendi, officia, sed modi. Laborum commodi corporis nemo dicta!
+					Olamijuwonlo is an astute business professional highly skilled in strategic planning, establishing priorities,
+					delegating taks and motivating teams. He is a visionary leader with strong persuasive instincts and extensive knowledge
+					of local and international politics. He is not only motivated, versatile and organized with strong work ehics, but also
+					a social influencer passionate about the plight of the common people of the society.
 				</p>
 				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quae, vel magnam velit rem qui enim provident
-					asperiores repellendus, sunt mollitia ut similique? Accusamus, magnam eum dolores consequuntur tenetur rerum quia
-					provident nesciunt, harum dolore nihil amet vitae iure pariatur veritatis? Maxime dolorum eligendi necessitatibus
-					voluptatibus, mollitia ducimus similique et!
+					As a committed patriot, he has embarked on the mission of transforming lives by being a pacesetter and philanthropist
+					who is conscious of the education of this generation. He believes education can be a strong leverage for anyone who
+					desires to make a change and contribute meaningfully to the progress and development of their local community and the
+					nation at large.
 				</p>
 
-				<div className="row my-6">
+				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Background</h2>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quos maiores, tenetur dolore a, quibusdam alias
-							iusto molestias accusamus sequi amet ab porro culpa quod ullam laboriosam unde nemo esse dolorem quis enim
-							commodi omnis? Repudiandae nulla magni atque at.
+							<span className="font-weight-bold">Olamijuwonlo Alao-Akala</span> hails from Ogbomoso, a city in Oyo state. He
+							was born on the 9th of September into the family of His Excellency, Otunba Christopher Adebayo Alao-Akala, the
+							former executive governor of Oyo state.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur maiores totam provident sit expedita
-							asperiores vero pariatur ullam odit, in, natus magni. Accusamus aliquam commodi sit. Sint, rem tempora eaque
-							fugit quaerat ullam eos quas temporibus. Ratione consectetur, harum dolores perspiciatis neque officia eum vero
-							magnam expedita voluptatum laboriosam quaerat sapiente modi excepturi nisi, ipsum sit, explicabo nam laborum
-							vel?
+							At a younger age, he developed interest in activities like reading, participation in seminars and developmental
+							programs or workshops, Golf, Basketball, Swimming and Research. He was able to manage all these activities while
+							still in school. He was able to learn how to multitask efficiently at a such a younger age.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">
@@ -46,51 +45,38 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row my-6">
+				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Education</h2>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quos maiores, tenetur dolore a, quibusdam alias
-							iusto molestias accusamus sequi amet ab porro culpa quod ullam laboriosam unde nemo esse dolorem quis enim
-							commodi omnis? Repudiandae nulla magni atque at.
+							He started his elentrary education at the age of 4 at the (name of school, and location). He later proceeded to
+							Rainbow College, Surulere, Lagos state for his secondary school leaving certificate in 2001. Due to his curiosity to be
+							a problem solver, he enrolled in Lead City University, Ibadan, Oyo state to study Computer & Information
+							Sciences where he bagged his Bachelor of Science degree.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur maiores totam provident sit expedita
-							asperiores vero pariatur ullam odit, in, natus magni. Accusamus aliquam commodi sit. Sint, rem tempora eaque
-							fugit quaerat ullam eos quas temporibus. Ratione consectetur, harum dolores perspiciatis neque officia eum vero
-							magnam expedita voluptatum laboriosam quaerat sapiente modi excepturi nisi, ipsum sit, explicabo nam laborum
-							vel?
+							He later proceeded to the University of Buckingham, United Kingdom for his second degree where he studied
+							Service Management. This helped to prepare him for Service Marketing, Operations, Leadership, Finances and
+							Project Management. He bagged his master's degree in 2011.
 						</p>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam voluptatum ducimus expedita placeat
-							exercitationem nobis pariatur quaerat. Alias dolorum error pariatur? Quaerat necessitatibus eos, excepturi
-							impedit dolores voluptas delectus sapiente consequuntur, accusamus quam eveniet, velit corporis id nemo
-							explicabo quae?
-						</p>
+						<p>He emerged as winner in the Automotive Sector Simulation at Buckingham Business School, London in 2010.</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center">
 						<img className="rounded-circle abtImg d-block mx-auto" src="/images/lmj005.JPG" alt="LMJ" loading="lazy" />
 					</div>
 				</div>
 
-				<div className="row my-6">
+				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Business Career</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ex sit quis dolorem? Officiis vitae corrupti
-							perferendis, alias quaerat laboriosam facilis aspernatur animi non iure, ab rerum saepe velit inventore, facere
-							quod nam dolores dicta similique sit repudiandae sequi amet.
+							He made his entry into the business world in 2011 when he was appointed as the Business Development Executive at
+							the Tulcan Energy Resources Limited, Victoria Island, Lagos state.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam nam sed nihil qui sint voluptatum
-							architecto sunt. Ullam nostrum cupiditate a esse, inventore veritatis harum deserunt. Placeat, porro cum!
-						</p>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nobis totam error, quia libero saepe
-							provident officiis, atque accusantium, similique fugiat minus. Facere, ea sint ab iusto optio veritatis sit
-							pariatur reprehenderit quis illo dicta aspernatur repellendus, quibusdam voluptatem placeat. Praesentium quia
-							architecto reprehenderit itaque magnam? Temporibus neque eius minima qui quibusdam obcaecati et laboriosam,
-							dignissimos cumque facere, nulla, a rerum ab quisquam rem aut! Ab neque cumque molestiae magni iure quia.
+							Due to his experiences and trainings, he is currently the Chairman of Parrot FM Radio Station, Ogbomoso, Oyo
+							State. He is also the Chief Executive Officer of TDB Global Venture whose headquarters is located in Apapa,
+							Lagos State.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">
@@ -103,7 +89,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row my-6">
+				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Political Career</h2>
 						<p>
@@ -133,7 +119,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row my-6">
+				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Philanthropic Service</h2>
 						<p>
