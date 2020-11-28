@@ -6,6 +6,7 @@ import Galleries from "./Galleries";
 
 const NavBar = lazy(() => import("../Reusable Components/Navbar"));
 const Footer = lazy(() => import("../Reusable Components/Footer"));
+const ScrollToTop = lazy(() => import("../Reusable Components/ScrollToTop"));
 
 const Gallery = () => {
 	const { pathname } = useLocation();
@@ -27,6 +28,7 @@ const Gallery = () => {
 				<Galleries />
 				{/* <GalleryGrid /> */}
 				<Footer />
+				<ScrollToTop />
 			</Suspense>
 		</div>
 	);

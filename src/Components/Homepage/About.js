@@ -29,7 +29,7 @@ const About = () => {
 						</div>
 						<div className="col-md-8 mx-auto col-lg-6 d-flex justify-content-between">
 							<Link
-								to="/"
+								to="/about#philanthropy"
 								className="d-flex flex-column justify-content-between align-items-center h-100 text-light"
 								data-aos="zoom-in"
 							>
@@ -39,7 +39,7 @@ const About = () => {
 								<p className="text-justify mb-0">Philanthropist</p>
 							</Link>
 							<Link
-								to="/"
+								to="/about#politics"
 								className="d-flex flex-column justify-content-between align-items-center h-100 text-light"
 								data-aos="zoom-in"
 							>
@@ -49,7 +49,7 @@ const About = () => {
 								<p className="text-justify mb-0">Politician</p>
 							</Link>
 							<Link
-								to="/"
+								to="/about"
 								className="d-flex flex-column justify-content-between align-items-center h-100 text-light"
 								data-aos="zoom-in"
 							>

@@ -13,18 +13,30 @@ const Footer = () => {
 							</div>
 						</div>
 						<p className="pr-lg-5">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptatem sequi asperiores illo id facere esse
-							cupiditate commodi, nobis non?
+							This is the official website of Hon Olamujuwonlo Alao-Akala. To discover any latest information or programmes
+							from him, you can keep checking here. Beware of fraudsters.
 						</p>
 						<p className="pr-lg-5">
 							Follow us:&nbsp;
-							<a href="http://www.facebook.com/lamijuakala" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+							<a
+								href="http://www.facebook.com/lamijuakala"
+								className="mx-2 d-inline-block link text-center rounded-circle"
+								rel="nofollow"
+							>
 								<i className="fa fa-facebook"></i>
 							</a>
-							<a href="http://www.instagram.com/lamijuakala" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+							<a
+								href="http://www.instagram.com/lamijuakala"
+								className="mx-2 d-inline-block link text-center rounded-circle"
+								rel="nofollow"
+							>
 								<i className="fa fa-instagram"></i>
 							</a>
-							<a href="http://www.twitter.com/lamijuakala" className="mx-2 d-inline-block link text-center rounded-circle" rel="nofollow">
+							<a
+								href="http://www.twitter.com/lamijuakala"
+								className="mx-2 d-inline-block link text-center rounded-circle"
+								rel="nofollow"
+							>
 								<i className="fa fa-twitter"></i>
 							</a>
 						</p>

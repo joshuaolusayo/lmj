@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const ScrollToTop = () => {
-    const [showScroll, setShowScroll] = useState(false);
+	const [showScroll, setShowScroll] = useState(false);
 
 	const scrollTop = () => {
 		window.scrollTo({

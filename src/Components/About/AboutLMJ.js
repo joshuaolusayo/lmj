@@ -50,9 +50,9 @@ const AboutLMJ = () => {
 						<h2 className="font-weight-bold">Education</h2>
 						<p>
 							He started his elentrary education at the age of 4 at the (name of school, and location). He later proceeded to
-							Rainbow College, Surulere, Lagos state for his secondary school leaving certificate in 2001. Due to his curiosity to be
-							a problem solver, he enrolled in Lead City University, Ibadan, Oyo state to study Computer & Information
-							Sciences where he bagged his Bachelor of Science degree.
+							Rainbow College, Surulere, Lagos state for his secondary school leaving certificate in 2001. Due to his
+							curiosity to be a problem solver, he enrolled in Lead City University, Ibadan, Oyo state to study Computer &
+							Information Sciences where he bagged his Bachelor of Science degree.
 						</p>
 						<p>
 							He later proceeded to the University of Buckingham, United Kingdom for his second degree where he studied
@@ -66,7 +66,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6">
+				<div className="row align-items-center my-6" id="business">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Business Career</h2>
 						<p>
@@ -89,24 +89,26 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6">
+				<div className="row align-items-center my-6" id="politics">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Political Career</h2>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, ad deserunt inventore eaque vel atque corporis
-							officia magnam quis. Tempora, delectus id incidunt libero amet quam illo eum sequi praesentium.
+							As a youth with a passion to see a change in the ways things are handled in the political sector, Olamijuwonlo
+							dived into politics in order to take responsibilities and bring about the desired change into the community. His
+							topmost priority is to ensure that the economy of the community is boosted and the need of the citizens
+							especially the workers, pupils and students are well taken care of.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum libero obcaecati qui optio atque facere dicta
-							expedita consectetur voluptas praesentium, minus officia impedit explicabo, doloribus voluptate. Excepturi sunt
-							asperiores atque nobis aut dolores, libero iste ducimus dolor impedit unde!
+							While serving as the Executive Chairman of the Ogbomoso North Local Government, his topmost priority was the
+							interest of the citizens. This was made manifested through the various structures he put in place and different
+							innovative and empowerment programs he organized where a lot of citizens were tranined and empowered to be their
+							own boss.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facilis nam impedit harum, exercitationem
-							voluptas aperiam culpa doloribus, similique quidem sapiente possimus quas consequatur nesciunt dolorum quasi
-							cumque repellat unde! Suscipit culpa ipsam a velit officia amet ex quisquam aliquid asperiores accusamus,
-							repellat veritatis! Repellat ullam maxime, quae at, voluptatem sequi distinctio magnam voluptates architecto
-							debitis numquam facilis. Aspernatur porro minus nobis doloremque voluptatem?
+							Some of his achievement include the procurring of tractors, fertilizers, among other farm machines and
+							implements so as to ensure the citizens engage in activities that feed the community. His investment in the
+							Agricultural sector helped to boost the availability of agricultural produce in the community which in turn
+							helps to keep the economy to thrive.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center">
@@ -119,25 +121,19 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6">
+				<div className="row align-items-center my-6" id="philanthropist">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Philanthropic Service</h2>
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius explicabo ipsa provident unde sunt ducimus beatae
-							neque illo nulla et aut excepturi quo possimus eum blanditiis officia, sequi quasi, eos dolores reiciendis
-							corporis. Ipsum qui, provident officiis dolore ipsa eveniet!
+							Hon Olamijuwonlo Alao-Akala has committed himself to helping people before, during and after his service as the
+							Executive Governor of Oyo State. He strongly believes in the need to give back to the society and invest in the
+							upcoming generation so as to raise more responsible and matured citizens who will work together to ensure the
+							progress and the development of the community.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem soluta magnam, optio commodi recusandae
-							minus ea maxime vel dicta delectus provident, illum obcaecati ullam ipsa amet. Quibusdam porro, ex id
-							accusantium totam dolorem enim quis quidem.
-						</p>
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum ullam quos doloremque laborum,
-							exercitationem tenetur aperiam temporibus minima earum excepturi molestiae! Aspernatur eveniet dignissimos
-							aliquid eum. Modi voluptate vero aspernatur expedita laborum possimus non odio! Magni iusto doloribus suscipit
-							architecto itaque vel necessitatibus unde quo aliquam labore. Recusandae suscipit, quos at id assumenda quidem
-							accusantium cumque quod numquam ab labore! Doloribus!
+							Through his foundation, Olamijuwonlo Foundation, Hon Olamijuwonlo Alao-Akala has been able to reach out to the
+							less priviledged citizens and undeserved kids and students in order to ensure they have quality education. He
+							has also been able to help few small scale businesses with funds in order to keep their businesses growing.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">
