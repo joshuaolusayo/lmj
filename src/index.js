@@ -17,7 +17,7 @@ ReactDOM.render(
 			<Route exact path="/" component={Homepage}></Route>
 			<Route exact path="/about" component={AboutPage}></Route>
 			<Route exact path="/blog" component={Blog}></Route>
-			<Route exact path="/blog-article" component={BlogArticle}></Route>
+			<Route exact path="/blog-article/:heading" component={BlogArticle}></Route>
 			<Route exact path="/contact" component={Contact}></Route>
 			<Route exact path="/gallery" component={Gallery}></Route>
 		</BrowserRouter>

@@ -13,7 +13,7 @@ const Footer = () => {
 							</div>
 						</div>
 						<p className="pr-lg-5">
-							This is the official website of Hon Olamujuwonlo Alao-Akala. To discover any latest information or programmes
+							This is the official website of Hon Olamijuwonlo Alao-Akala. To discover any latest information or programmes
 							from him, you can keep checking here. Beware of fraudsters.
 						</p>
 						<p className="pr-lg-5">

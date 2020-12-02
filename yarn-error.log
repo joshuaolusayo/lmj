@@ -1,0 +1,78 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add redux react-redux
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/mac/Desktop/nand2tetris/tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  15.1.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@testing-library%2fjest-dom: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:141408:19)
+      at listOnTimeout (node:internal/timers:555:17)
+      at processTimers (node:internal/timers:498:7)
+
+npm manifest: 
+  {
+    "name": "lmj",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "aos": "^2.3.4",
+      "axios": "^0.21.0",
+      "npm-check-updates": "^10.2.2",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "react-grid-gallery": "^0.5.5",
+      "react-images": "^1.1.7",
+      "react-photo-gallery": "^8.0.0",
+      "react-router": "^5.2.0",
+      "react-router-dom": "^5.2.0",
+      "react-router-hash-link": "^2.2.2",
+      "react-scripts": "4.0.0",
+      "react-slick": "^0.27.13",
+      "react-spinners": "^0.9.0",
+      "slick-carousel": "^1.8.1",
+      "web-vitals": "^0.2.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

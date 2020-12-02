@@ -2,6 +2,8 @@ import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
+// import { createStore } from "redux";
+
 const Footer = lazy(() => import("../Reusable Components/Footer"));
 const NavBar = lazy(() => import("../Reusable Components/Navbar"));
 const Banner = lazy(() => import("./Banner"));

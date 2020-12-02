@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 const NavBar = lazy(() => import("../Reusable Components/Navbar"));
 const Article = lazy(() => import("./Article"));
-const MoreArticles = lazy(() => import("./MoreArticles"));
+// const MoreArticles = lazy(() => import("./MoreArticles"));
 const Subscribe = lazy(() => import("../Reusable Components/Subscribe"));
 const Footer = lazy(() => import("../Reusable Components/Footer"));
 
@@ -25,7 +25,7 @@ const BlogArticle = () => {
 			>
 				<NavBar />
 				<Article />
-				<MoreArticles />
+				{/* <MoreArticles /> */}
 				<Subscribe />
 				<Footer />
 			</Suspense>
