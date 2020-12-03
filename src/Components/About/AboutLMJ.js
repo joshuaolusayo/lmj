@@ -10,9 +10,9 @@ const AboutLMJ = () => {
 				<img className="coverImg mb-3" src="/images/lmj003.JPG" alt="LMJ at office" loading="lazy" />
 				<p>
 					Olamijuwonlo is an astute business professional highly skilled in strategic planning, establishing priorities,
-					delegating taks and motivating teams. He is a visionary leader with strong persuasive instincts and extensive knowledge
-					of local and international politics. He is not only motivated, versatile and organized with strong work ehics, but also
-					a social influencer passionate about the plight of the common people of the society.
+					delegating tasks, and motivating teams. He is a visionary leader with strong persuasive instincts and extensive
+					knowledge of local and international politics. He is not only motivated, versatile, and organized with strong work
+					ethics, but also a social influencer passionate about the plight of the common people of the society.
 				</p>
 				<p>
 					As a committed patriot, he has embarked on the mission of transforming lives by being a pacesetter and philanthropist
@@ -30,9 +30,9 @@ const AboutLMJ = () => {
 							former executive governor of Oyo state.
 						</p>
 						<p>
-							At a younger age, he developed interest in activities like reading, participation in seminars and developmental
-							programs or workshops, Golf, Basketball, Swimming and Research. He was able to manage all these activities while
-							still in school. He was able to learn how to multitask efficiently at a such a younger age.
+							At a young age, he developed an interest in activities like reading, participation in seminars and developmental
+							programs or workshops, Golf, Basketball, Swimming, and Research. He was able to manage all these activities
+							while still in school. He was able to learn how to multitask efficiently from a young age.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">
@@ -49,17 +49,19 @@ const AboutLMJ = () => {
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Education</h2>
 						<p>
-							He started his elentrary education at the age of 4 at the (name of school, and location). He later proceeded to
-							Rainbow College, Surulere, Lagos state for his secondary school leaving certificate in 2001. Due to his
-							curiosity to be a problem solver, he enrolled in Lead City University, Ibadan, Oyo state to study Computer &
-							Information Sciences where he bagged his Bachelor of Science degree.
+							He started his elementary education at the age of 4 at the St Mary Private School, Lagos Island. He proceeded to
+							Federal Government College, Ogbomoso for his junior secondary school. He later proceeded to Rainbow College,
+							Surulere, Lagos State for his secondary school leaving certificate in 2001. He enrolled in Covenant University
+							where he studied Computer Engineering. Due to his curiosity to be a problem solver, he enrolled in Lead City
+							University, Ibadan, Oyo state to study Computer & Information Sciences where he bagged his Bachelor of Science
+							degree.
 						</p>
 						<p>
-							He later proceeded to the University of Buckingham, United Kingdom for his second degree where he studied
-							Service Management. This helped to prepare him for Service Marketing, Operations, Leadership, Finances and
+							He later proceeded to the University of Buckingham, the United Kingdom for his master's degree where he studied
+							Service Management. This helped to prepare him for Service Marketing, Operations, Leadership, Finances, and
 							Project Management. He bagged his master's degree in 2011.
 						</p>
-						<p>He emerged as winner in the Automotive Sector Simulation at Buckingham Business School, London in 2010.</p>
+						<p>He emerged as the winner in the Automotive Sector Simulation at Buckingham Business School, London in 2010.</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center">
 						<img className="rounded-circle abtImg d-block mx-auto" src="/images/lmj005.JPG" alt="LMJ" loading="lazy" />
@@ -71,16 +73,20 @@ const AboutLMJ = () => {
 						<h2 className="font-weight-bold">Business Career</h2>
 						<p>
 							He made his entry into the business world in 2011 when he was appointed as the Business Development Executive at
-							the Tulcan Energy Resources Limited, Victoria Island, Lagos state.
+							Tulcan Energy Resources Limited, Victoria Island, Lagos state.
 						</p>
 						<p>
-							Due to his experiences and trainings, he is currently the Chairman of Parrot FM Radio Station, Ogbomoso, Oyo
-							State. He is also the Chief Executive Officer of TDB Global Venture whose headquarters is located in Apapa,
+							Due to his experiences and training, he is currently the Chairman of Parrot FM Radio Station, Ogbomoso, Oyo
+							State. He is also the Chief Executive Officer of TDB Global Venture whose headquarters is located in Ikoyi,
 							Lagos State.
 						</p>
 						<p>
-							He loves farming and investing in Agriculture generally. He has farmlands where he practises crop production and
-							livestock rearing.
+							He loves farming and investing in Agriculture generally. He has farmlands where he practices crop production,
+							livestock rearing, and Agro real estate{" "}
+							<a className="text-primary" href="//umera.ng">
+								Agro real estate
+							</a>
+							.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">
@@ -98,21 +104,21 @@ const AboutLMJ = () => {
 						<h2 className="font-weight-bold">Political Career</h2>
 						<p>
 							As a youth with a passion to see a change in the ways things are handled in the political sector, Olamijuwonlo
-							dived into politics in order to take responsibilities and bring about the desired change into the community. His
+							dived into politics in order to take responsibility and bring about the desired change in the community. His
 							topmost priority is to ensure that the economy of the community is boosted and the need of the citizens
-							especially the workers, pupils and students are well taken care of.
+							especially the workers, pupils, and students are well taken care of.
 						</p>
 						<p>
 							While serving as the Executive Chairman of the Ogbomoso North Local Government, his topmost priority was the
 							interest of the citizens. This was made manifested through the various structures he put in place and different
-							innovative and empowerment programs he organized where a lot of citizens were tranined and empowered to be their
+							innovative and empowerment programs he organized where a lot of citizens were trained and empowered to be their
 							own boss.
 						</p>
 						<p>
-							Some of his achievement include the procurring of tractors, fertilizers, among other farm machines and
-							implements so as to ensure the citizens engage in activities that feed the community. His investment in the
-							Agricultural sector helped to boost the availability of agricultural produce in the community which in turn
-							helps to keep the economy to thrive.
+							Some of his achievements include the procuring of tractors, fertilizers, among other farm machines and equipment
+							so as to ensure the citizens engage in activities that feed the community. His investment in the Agricultural
+							sector helped to boost the availability of agricultural produce in the community which in turn helps to keep the
+							economy thriving.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center">
@@ -129,15 +135,15 @@ const AboutLMJ = () => {
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Philanthropic Service</h2>
 						<p>
-							Hon Olamijuwonlo Alao-Akala has committed himself to helping people before, during and after his service as the
-							Executive Governor of Oyo State. He strongly believes in the need to give back to the society and invest in the
-							upcoming generation so as to raise more responsible and matured citizens who will work together to ensure the
-							progress and the development of the community.
+							Hon. Olamijuwonlo Alao-Akala has committed himself to help people before, during, and after his service as the
+							Executive Chairman of Ogbomoso North Local Government. He strongly believes in the need to give back to society
+							and invest in the upcoming generation so as to raise more responsible and mature citizens who will work together
+							to ensure the progress and the development of the community.
 						</p>
 						<p>
 							Through his foundation, Olamijuwonlo Foundation, Hon Olamijuwonlo Alao-Akala has been able to reach out to the
-							less priviledged citizens and undeserved kids and students in order to ensure they have quality education. He
-							has also been able to help few small scale businesses with funds in order to keep their businesses growing.
+							less privileged citizens, kids, and students in order to ensure they have quality education. He has also been
+							able to help a few small-scale businesses with funds in order to keep their businesses growing.
 						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">

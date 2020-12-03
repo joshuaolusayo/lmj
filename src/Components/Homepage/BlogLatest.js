@@ -24,7 +24,7 @@ const BlogLatest = () => {
 		};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [loaded]);
-	
+
 	if (post) {
 		return (
 			<div className="container-fluid px-0">
@@ -56,8 +56,8 @@ const BlogLatest = () => {
 											<h4 className="card-title font-weight-bold">Politics</h4>
 											<p className="card-text">
 												Praying and hoping for change is not enough to birth the new Nigeria we are expecting. It is
-												important that we take proactive actions as youth and get involved in national service. As a
-												politician committed to serving the community, my engagement is to ensure a new Nigeria we
+												important that we take proactive actions as youths and get involved in national service. As
+												a politician committed to serving the community, my engagement is to ensure a new Nigeria we
 												can all be proud of is born.
 											</p>
 											<Link to="/blog" className="bg-primary__light text-secondary__light btn more">
@@ -73,9 +73,9 @@ const BlogLatest = () => {
 											<h4 className="card-title font-weight-bold">Agriculture</h4>
 											<p className="card-text">
 												One of the core needs of man is food. By providing food for the nation, farmers do not only
-												reduce the mortality rate, but also equip the citizens with the energy to do their
-												respective work effectively through the provision of farm products. I am glad to be part of
-												this noble profession.
+												reduce the mortality rate but also equip the citizens with the energy to do their respective
+												work effectively through the provision of farm products. I am glad to be part of this noble
+												profession.
 											</p>
 											<Link to="/blog" className="bg-primary__light text-secondary__light btn more">
 												Explore
@@ -93,7 +93,7 @@ const BlogLatest = () => {
 												it is important the citizens learn to give back to the community. Everybody may not have
 												cash or material thing to give. However, it is important to note that everybody has
 												something to offer towards the growth and development of the community. I do not only
-												believe this, I practise it also.
+												believe this, but I practice it also.
 											</p>
 											<Link to="/blog" className="bg-primary__light text-secondary__light btn more">
 												Explore

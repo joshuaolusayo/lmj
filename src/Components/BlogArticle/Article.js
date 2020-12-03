@@ -34,7 +34,7 @@ const Article = (props) => {
 		return (
 			<div className="container-fluid article px-0">
 				<Helmet>
-					<title>${params.heading}</title>
+					<title>{params.heading}</title>
 					<meta name="description" content={params.heading} />
 					<meta
 						name="keywords"
