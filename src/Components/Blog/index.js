@@ -2,14 +2,16 @@ import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
+import componentLoader from "../Reusable Components/componentLoader";
+
 // import { createStore } from "redux";
 
-const Footer = lazy(() => import("../Reusable Components/Footer"));
-const NavBar = lazy(() => import("../Reusable Components/Navbar"));
-const Banner = lazy(() => import("./Banner"));
-const BlogSection = lazy(() => import("./BlogSection"));
-const Subscribe = lazy(() => import("../Reusable Components/Subscribe"));
-const ScrollToTop = lazy(() => import("../Reusable Components/ScrollToTop"));
+const Footer = lazy(() => componentLoader(() => import("../Reusable Components/Footer")));
+const NavBar = lazy(() => componentLoader(() => import("../Reusable Components/Navbar")));
+const Banner = lazy(() => componentLoader(() => import("./Banner")));
+const BlogSection = lazy(() => componentLoader(() => import("./BlogSection")));
+const Subscribe = lazy(() => componentLoader(() => import("../Reusable Components/Subscribe")));
+const ScrollToTop = lazy(() => componentLoader(() => import("../Reusable Components/ScrollToTop")));
 
 const Blog = () => {
 	const { pathname } = useLocation();

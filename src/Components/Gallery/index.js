@@ -4,9 +4,11 @@ import { HashLoader } from "react-spinners";
 import Galleries from "./Galleries";
 // import GalleryGrid from "./GalleryGrid";
 
-const NavBar = lazy(() => import("../Reusable Components/Navbar"));
-const Footer = lazy(() => import("../Reusable Components/Footer"));
-const ScrollToTop = lazy(() => import("../Reusable Components/ScrollToTop"));
+import componentLoader from "../Reusable Components/componentLoader";
+
+const NavBar = lazy(() => componentLoader(() => import("../Reusable Components/Navbar")));
+const Footer = lazy(() => componentLoader(() => import("../Reusable Components/Footer")));
+const ScrollToTop = lazy(() => componentLoader(() => import("../Reusable Components/ScrollToTop")));
 
 const Gallery = () => {
 	const { pathname } = useLocation();

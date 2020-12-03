@@ -2,10 +2,12 @@ import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
-const NavBar = lazy(() => import("../Reusable Components/Navbar"));
-const ContactPane = lazy(() => import("./ContactPane"));
-const Footer = lazy(() => import("../Reusable Components/Footer"));
-const ScrollToTop = lazy(() => import("../Reusable Components/ScrollToTop"));
+import componentLoader from "../Reusable Components/componentLoader";
+
+const NavBar = lazy(() => componentLoader(() => import("../Reusable Components/Navbar")));
+const ContactPane = lazy(() => componentLoader(() => import("./ContactPane")));
+const Footer = lazy(() => componentLoader(() => import("../Reusable Components/Footer")));
+const ScrollToTop = lazy(() => componentLoader(() => import("../Reusable Components/ScrollToTop")));
 
 const Contact = () => {
 	const { pathname } = useLocation();
