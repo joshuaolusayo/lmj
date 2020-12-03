@@ -17,7 +17,6 @@ const BlogSection = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	console.log(APIResponse);
 	return APIResponse ? (
 		<div className="container blog-section my-5">
 			<h2 className="font-weight-bold mb-4">Blog Articles</h2>
@@ -43,7 +42,7 @@ const BlogSection = () => {
 				))}
 			</div>
 		</div>
-	) : null;
+	) : <div className="my-5 text-center lead">Loading...</div>;
 };
 
 export default BlogSection;

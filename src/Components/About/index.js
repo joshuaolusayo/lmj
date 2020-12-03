@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
+import Helmet from "react-helmet";
 
 import componentLoader from "../Reusable Components/componentLoader";
 
@@ -25,6 +26,14 @@ const AboutPage = () => {
 					</div>
 				}
 			>
+				<Helmet>
+					<title>About Hon. Olamijuwonlo Alao-Akala</title>
+					<meta name="description" content="About Hon. Olamijuwonlo Alao-Akala" />
+					<meta
+						name="keywords"
+						content="About Olamijuwonlo Alao-Akala, Olamijuwonlo Alao Profile, About Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North"
+					/>
+				</Helmet>
 				<NavBar />
 				<AboutLMJ />
 				<Footer />

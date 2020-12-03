@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
+import Helmet from "react-helmet";
 
 import componentLoader from "../Reusable Components/componentLoader";
 
@@ -11,18 +12,10 @@ const Slides = lazy(() => componentLoader(() => import("./Slides")));
 const Footer = lazy(() => componentLoader(() => import("../Reusable Components/Footer")));
 const ScrollToTop = lazy(() => componentLoader(() => import("../Reusable Components/ScrollToTop")));
 
-
 const Homepage = () => {
 	const { pathname } = useLocation();
 
 	useEffect(() => {
-		// componentLoader(NavBar, 5);
-		// componentLoader(About, 5);
-		// componentLoader(BlogLatest, 5);
-		// componentLoader(Slides, 5);
-		// componentLoader(Footer, 5);
-		// componentLoader(ScrollToTop, 5);
-		
 		window.scrollTo(0, 0);
 	}, [pathname]);
 
@@ -35,6 +28,11 @@ const Homepage = () => {
 					</div>
 				}
 			>
+				<Helmet>
+					<title>Homepage - Welcome to Hon. Olamijuwonlo website</title>
+					<meta name="description" content="Honourable Olamijuwonlo Alao-Akala website" />
+					<meta name="keywords" content="Olamijuwonlo Alao-Akala, Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North" />
+				</Helmet>
 				<NavBar />
 				<Slides />
 				<About />

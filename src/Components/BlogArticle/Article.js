@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Helmet from "react-helmet";
 
 const Article = (props) => {
 	const [posts, setAllPosts] = useState();
@@ -26,19 +27,27 @@ const Article = (props) => {
 				return false;
 			});
 		}
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [loaded, params.heading]);
 
 	if (post) {
 		return (
 			<div className="container-fluid article px-0">
+				<Helmet>
+					<title>${params.heading}</title>
+					<meta name="description" content={params.heading} />
+					<meta
+						name="keywords"
+						content={`${post.heading}, ${post.tag}`}
+					/>
+				</Helmet>
 				<div
 					className="banner"
 					style={{ background: `linear-gradient(rgba(0,0,0.2), rgba(0,0,0,0.2)), url(${post.image}) 15% 0%` }}
 				>
 					<div className="container d-flex flex-column justify-content-center align-items-center h-100 text-light">
 						<span className="text-uppercase mb-3">{post.tag}</span>
-						<h3 className="font-weight-bold">{post.heading}</h3>
+						<h3 className="font-weight-bold text-center">{post.heading}</h3>
 						<span className="mt-2">
 							<i className="fa fa-clock-o"></i> {post.date}
 						</span>
@@ -54,8 +63,8 @@ const Article = (props) => {
 								<span>- {post.quoteStartAuthor}</span>
 							</div>
 							<p>{post.intro}</p>
-							{post.section.map((data) => (
-								<div className="my-5">
+							{post.section.map((data, index) => (
+								<div key={index} className="my-5">
 									<h4 className="font-weight-bold">{data.heading}</h4>
 									{data.para.map((paragraph, index) => (
 										<p key={index}>{paragraph}</p>
@@ -102,7 +111,7 @@ const Article = (props) => {
 				</div>
 			</div>
 		);
-	} else return null;
+	} else return <div className="my-5 text-center lead">Loading...</div>;
 };
 
 export default Article;

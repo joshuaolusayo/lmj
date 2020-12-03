@@ -78,6 +78,10 @@ const AboutLMJ = () => {
 							State. He is also the Chief Executive Officer of TDB Global Venture whose headquarters is located in Apapa,
 							Lagos State.
 						</p>
+						<p>
+							He loves farming and investing in Agriculture generally. He has farmlands where he practises crop production and
+							livestock rearing.
+						</p>
 					</div>
 					<div className="col-lg-4 d-flex justify-content-center align-items-center d-b4">
 						<img
@@ -121,7 +125,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6" id="philanthropist">
+				<div className="row align-items-center my-6" id="philanthropy">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Philanthropic Service</h2>
 						<p>

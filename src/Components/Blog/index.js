@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
+import Helmet from "react-helmet";
 
 import componentLoader from "../Reusable Components/componentLoader";
 
@@ -29,6 +30,14 @@ const Blog = () => {
 					</div>
 				}
 			>
+				<Helmet>
+					<title>Blog</title>
+					<meta name="description" content="Honourable Olamijuwonlo Alao-Akala blog site" />
+					<meta
+						name="keywords"
+						content="Olamijuwonlo Alao-Akala blog, Honourable Olamijuwonlo blog, lamijuakala blog, Olamiju blog"
+					/>
+				</Helmet>
 				<NavBar />
 				<Banner />
 				<BlogSection />
