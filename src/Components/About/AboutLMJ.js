@@ -28,7 +28,7 @@ const AboutLMJ = () => {
 
 				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
-						<h2 data-aos="zoom-in-down" className="font-weight-bold">Background</h2>
+						<h2 className="font-weight-bold">Background</h2>
 						<p data-aos="fade-right">
 							<span className="font-weight-bold">Olamijuwonlo Alao-Akala</span> hails from Ogbomoso, a city in Oyo state. He
 							was born on the 9th of September into the family of His Excellency, Otunba Christopher Adebayo Alao-Akala, the
@@ -52,7 +52,7 @@ const AboutLMJ = () => {
 
 				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
-						<h2 data-aos="zoom-in-down" className="font-weight-bold">Education</h2>
+						<h2 className="font-weight-bold">Education</h2>
 						<p data-aos="fade-right">
 							He started his elementary education at the age of 4 at the St Mary Private School, Lagos Island. He proceeded to
 							Federal Government College, Ogbomoso for his junior secondary school. He later proceeded to Rainbow College,
@@ -75,7 +75,7 @@ const AboutLMJ = () => {
 
 				<div className="row align-items-center my-6">
 					<div className="col-lg-8">
-						<h2 data-aos="zoom-in-down" className="font-weight-bold">Marital life</h2>
+						<h2 className="font-weight-bold">Marital life</h2>
 						<p data-aos="fade-right">
 							He was engaged to Hadiza Okoya, the daughter of the foremost industrialist Chief Rasaq Akanni Okoya who is also
 							the Aare of Lagos and the founder and chaiman of Eleganza group of companies. The engagement culminated into
@@ -94,7 +94,7 @@ const AboutLMJ = () => {
 
 				<div className="row align-items-center my-6" id="business">
 					<div className="col-lg-8">
-						<h2 data-aos="zoom-in-down" className="font-weight-bold">Business Career</h2>
+						<h2 className="font-weight-bold">Business Career</h2>
 						<p data-aos="fade-right">
 							He made his entry into the business world in 2011 when he was appointed as the Business Development Executive at
 							Tulcan Energy Resources Limited, Victoria Island, Lagos state.
@@ -125,7 +125,7 @@ const AboutLMJ = () => {
 
 				<div className="row align-items-center my-6" id="politics">
 					<div className="col-lg-8">
-						<h2 data-aos="zoom-in-down" className="font-weight-bold">Political Career</h2>
+						<h2 className="font-weight-bold">Political Career</h2>
 						<p data-aos="fade-right">
 							As a youth with a passion to see a change in the ways things are handled in the political sector, Olamijuwonlo
 							dived into politics in order to take responsibility and bring about the desired change in the community. His
@@ -157,7 +157,7 @@ const AboutLMJ = () => {
 
 				<div className="row align-items-center my-6" id="philanthropy">
 					<div className="col-lg-8">
-						<h2 data-aos="zoom-in-down" className="font-weight-bold">Philanthropic Service</h2>
+						<h2 className="font-weight-bold">Philanthropic Service</h2>
 						<p data-aos="fade-right">
 							Hon. Olamijuwonlo Alao-Akala has committed himself to help people before, during, and after his service as the
 							Executive Chairman of Ogbomoso North Local Government. He strongly believes in the need to give back to society

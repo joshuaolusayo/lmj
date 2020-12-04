@@ -16,7 +16,7 @@ const NavBar = () => {
 		return () => {
 			document.querySelector("body").style.overflow = "scroll";
 		};
-	}, [show, location]);
+	}, [show, location.pathname]);
 
 	return (
 		<header className="container-fluid px-0 shadow bg-transparent navbar">
@@ -38,7 +38,7 @@ const NavBar = () => {
 				>
 					{!show ? <span className="navbar-toggler-icon"></span> : <span>X</span>}
 				</button>
-				<div className="collapse navbar-collapse justify-content-lg-end border-top" id="collapsibleNavId">
+				<div className="collapse navbar-collapse justify-content-lg-end" id="collapsibleNavId">
 					<ul className="navbar-nav mr-auto mr-md-0 h-100">
 						<li className="nav-item">
 							<Link
