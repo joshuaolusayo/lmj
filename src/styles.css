@@ -80,7 +80,7 @@ body {
     position: relative;
   }
   .navbar .navbar-collapse {
-    height: calc(100vh - 83px);
+    height: calc(100vh - 75px);
   }
   .navbar .navbar-nav {
     justify-content: center;
@@ -263,6 +263,10 @@ body {
 .homepage .blog-news .overlay .more:hover {
   background: #1c3ae3 !important;
   color: #e3c51c;
+}
+
+.aboutPage .overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .aboutPage .meet {

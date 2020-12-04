@@ -91,7 +91,7 @@ body {
 		}
 
 		.navbar-collapse {
-			height: calc(100vh - 83px);
+			height: calc(100vh - 75px);
 		}
 
 		.navbar-nav {
@@ -290,6 +290,10 @@ body {
 }
 
 .aboutPage {
+	.overflow-x-hidden {
+		overflow-x: hidden;
+	}
+
 	.meet {
 		height: 400px;
 	}

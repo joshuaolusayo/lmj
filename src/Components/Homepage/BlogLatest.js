@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 
 const BlogLatest = () => {
 	const [posts, setAllPosts] = useState();
@@ -7,6 +8,8 @@ const BlogLatest = () => {
 	const [loaded, setLoaded] = useState(false);
 
 	useEffect(() => {
+		AOS.init({ duration: 500, once: true });
+
 		fetch(`/blog/articles.json`, { method: "GET" })
 			.then((res) => res.json())
 			.then((json) => {
@@ -50,8 +53,8 @@ const BlogLatest = () => {
 							<h2 className="text-light font-weight-bold">Blog News</h2>
 							<div className="row">
 								<div className="col-md-6 col-lg-4 my-3">
-									<div className="card shadow h-100">
-										<img className="card-img-top" src="/images/lmj013.JPG" alt="LMJ Portrait" />
+									<div className="card shadow h-100" data-aos="fade-up">
+										<img className="card-img-top" src="/images/lmj013.JPG" alt="LMJ receiving certificate" />
 										<div className="card-body">
 											<h4 className="card-title font-weight-bold">Politics</h4>
 											<p className="card-text">
@@ -67,8 +70,8 @@ const BlogLatest = () => {
 									</div>
 								</div>
 								<div className="col-md-6 col-lg-4 my-3">
-									<div className="card shadow h-100">
-										<img className="card-img-top" src="/images/lmj-on-farm.jpg" alt="LMJ Portrait" />
+									<div className="card shadow h-100" data-aos="fade-up">
+										<img className="card-img-top" src="/images/lmj-on-farm.jpg" alt="Farmland" />
 										<div className="card-body">
 											<h4 className="card-title font-weight-bold">Agriculture</h4>
 											<p className="card-text">
@@ -84,8 +87,8 @@ const BlogLatest = () => {
 									</div>
 								</div>
 								<div className="col-md-6 col-lg-4 my-3">
-									<div className="card shadow h-100">
-										<img className="card-img-top" src="/images/lmj012.JPG" alt="LMJ Portrait" />
+									<div className="card shadow h-100" data-aos="fade-up">
+										<img className="card-img-top" src="/images/lmj012.JPG" alt="LMJ with primary school pupils" />
 										<div className="card-body">
 											<h4 className="card-title font-weight-bold">Philanthropy</h4>
 											<p className="card-text">
