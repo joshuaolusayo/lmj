@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import AOS from "aos";
-// import axios from "axios";
+import axios from "axios";
 
 const ContactPane = () => {
 	useEffect(() => {
@@ -20,24 +20,23 @@ const ContactPane = () => {
 	const [result, setResult] = useState(null);
 
 	const getForm = () => {
-		// axios
-		// 	.post("/send", { ...contact })
-		// 	.then((response) => {
-		// 		setResult(response.data);
-		// 		setContact({
-		// 			name: "",
-		// 			email: "",
-		// 			message: "",
-		// 			subject: "",
-		// 		});
-		// 	})
-		// 	.catch(() => {
-		// 		setResult({
-		// 			success: false,
-		// 			message: "Something went wrong. Try again later",
-		// 		});
-		// 	});
-		console.log("We have received your form");
+		axios
+			.post("/send", { ...contact })
+			.then((response) => {
+				setResult(response.data);
+				setContact({
+					name: "",
+					email: "",
+					message: "",
+					subject: "",
+				});
+			})
+			.catch(() => {
+				setResult({
+					success: false,
+					message: "Something went wrong. Try again later",
+				});
+			});
 	};
 
 	return (
