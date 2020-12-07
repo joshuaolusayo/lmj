@@ -20,8 +20,6 @@ import "aos/dist/aos.css";
 
 const store = createStore(blogPosts);
 
-console.log(blogPosts);
-console.log(store);
 ReactDOM.render(
 	<React.StrictMode>
 		<Provider store={store}>
