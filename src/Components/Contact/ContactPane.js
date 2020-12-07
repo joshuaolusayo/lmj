@@ -20,7 +20,6 @@ const ContactPane = () => {
 	const [result, setResult] = useState(null);
 
 	const getForm = () => {
-
 		axios
 			.post("/send", { ...contact })
 			.then((response) => {
@@ -101,7 +100,6 @@ const ContactPane = () => {
 											ref={register({ required: true, maxLength: 40 })}
 											autoComplete="on"
 										/>
-										
 									</div>
 									<div className="form-group mb-0">
 										<label htmlFor="email"></label>
@@ -119,7 +117,6 @@ const ContactPane = () => {
 											ref={register({ required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })}
 											autoComplete="on"
 										/>
-										
 									</div>
 									<div className="form-group mb-0">
 										<label htmlFor="subject"></label>
@@ -137,7 +134,6 @@ const ContactPane = () => {
 											ref={register({ required: true, maxLength: 80 })}
 											autoComplete="on"
 										/>
-										
 									</div>
 									<div className="form-group mb-0">
 										<label htmlFor="message"></label>
@@ -153,7 +149,6 @@ const ContactPane = () => {
 											placeholder="Your message"
 											ref={register({ required: true, maxLength: 300 })}
 										></textarea>
-										
 									</div>
 									<button className="btn-outline-primary my-4 btn" type="submit">
 										Submit
