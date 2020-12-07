@@ -15,8 +15,19 @@ const ScrollToTop = lazy(() => componentLoader(() => import("../Reusable Compone
 const Homepage = () => {
 	const { pathname } = useLocation();
 
+	const fetchAPIMessage = async () => {
+		try {
+			const res = await fetch(`/api/message`);
+			const { message } = await res.json();
+			this.setState({ message });
+		} catch (err) {
+			console.error(err);
+		}
+	};
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		fetchAPIMessage();
 	}, [pathname]);
 
 	return (
@@ -31,7 +42,10 @@ const Homepage = () => {
 				<Helmet>
 					<title>Homepage - Welcome to Hon. Olamijuwonlo website</title>
 					<meta name="description" content="Honourable Olamijuwonlo Alao-Akala website" />
-					<meta name="keywords" content="Olamijuwonlo Alao-Akala, Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North" />
+					<meta
+						name="keywords"
+						content="Olamijuwonlo Alao-Akala, Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North"
+					/>
 				</Helmet>
 				<NavBar />
 				<Slides />
