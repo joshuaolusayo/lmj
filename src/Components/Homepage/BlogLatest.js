@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 
 const BlogLatest = () => {
-	const [posts, setAllPosts] = useState();
 	const [post, setPost] = useState();
 	const [loaded, setLoaded] = useState(false);
 
@@ -13,18 +12,13 @@ const BlogLatest = () => {
 		fetch(`/blog/articles.json`, { method: "GET" })
 			.then((res) => res.json())
 			.then((json) => {
-				setAllPosts(json);
-				setLoaded(true);
+				setPost(json[0]);
 			})
 			.catch((e) => console.log(`An error occured: ${e}`));
 
-		if (loaded) {
-			setPost(posts[0]);
+		if (post) {
+			setLoaded(true);
 		}
-
-		return () => {
-			setLoaded(false);
-		};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [loaded]);
 
@@ -110,7 +104,7 @@ const BlogLatest = () => {
 				</div>
 			</div>
 		);
-	} else return null;
+	} else return <div className="my-5 text-center lead">Loading...</div>;
 };
 
 export default BlogLatest;

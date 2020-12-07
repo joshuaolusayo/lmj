@@ -5,7 +5,6 @@ const BlogSection = () => {
 	const [APIResponse, setAPIResponse] = useState();
 
 	function callAPI() {
-		// fetch("http://localhost:9000/API")
 		fetch("/blog/articles.json")
 			.then((res) => res.json())
 			.then((res) => setAPIResponse(res))
@@ -28,9 +27,7 @@ const BlogSection = () => {
 							<div className="card-body">
 								<h6 className="text-primary mb-3">{post.tag}</h6>
 								<h4 className="card-title text-black font-weight-bold">{post.heading}</h4>
-								<p className="card-text text-dark">
-									{post.intro}
-								</p>
+								<p className="card-text text-dark">{post.intro}</p>
 							</div>
 							<div className="card-footer text-muted border-0 bg-transparent">
 								<span>
@@ -42,7 +39,9 @@ const BlogSection = () => {
 				))}
 			</div>
 		</div>
-	) : <div className="my-5 text-center lead">Loading...</div>;
+	) : (
+		<div className="my-5 text-center lead">Loading...</div>
+	);
 };
 
 export default BlogSection;

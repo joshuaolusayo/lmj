@@ -1,4 +1,5 @@
 import React from "react";
+// import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 const Subscribe = () => {
 	return (

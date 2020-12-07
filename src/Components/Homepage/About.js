@@ -12,7 +12,7 @@ const About = () => {
 		<div className="container-fluid about bg-light px-0">
 			<div className="container jumbotron mb-0 bg-transparent">
 				<p className="text-center" data-aos="fade-up">
-					<span className="font-weight-bold">Announcement: </span> You can check my blog for the latest update about me. I will
+					<span className="font-weight-bold">Announcement: </span> You can check my blog for my latest update. I will
 					also be using the space to share my mind with you on different topics ranging from Education to Politics and
 					Philanthropy.
 				</p>

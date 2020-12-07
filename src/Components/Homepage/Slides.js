@@ -22,7 +22,7 @@ const Slides = () => {
 					<img src="/images/lmj-at-office.jpg" alt="LMJ at office" />
 					<div className="overlay w-100 rounded-top text-center p-2 px-md-5 py-md-3 d-flex flex-column justify-content-center align-items-center text-light">
 						<>
-							<span className="font-italic">Welcome to the official website of</span>
+							<span>Welcome to the official website of</span>
 							<span className="font-weight-bold text-bold">Hon Olamijuwonlo Alao-Akala</span>
 							{/* <br /><button className="btn-outline-light btn px- px-lg-4 py-3">Learn more</button> */}
 						</>

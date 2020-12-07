@@ -5,8 +5,6 @@ import Helmet from "react-helmet";
 
 import componentLoader from "../Reusable Components/componentLoader";
 
-// import { createStore } from "redux";
-
 const Footer = lazy(() => componentLoader(() => import("../Reusable Components/Footer")));
 const NavBar = lazy(() => componentLoader(() => import("../Reusable Components/Navbar")));
 const Banner = lazy(() => componentLoader(() => import("./Banner")));
