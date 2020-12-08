@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { ClipLoader } from "react-spinners";
 import AOS from "aos";
 import axios from "axios";
 
@@ -19,7 +20,10 @@ const ContactPane = () => {
 
 	const [result, setResult] = useState(null);
 
+	const [sending, setSending] = useState(false);
+
 	const getForm = () => {
+		setSending(true);
 		axios
 			.post("/send", { ...contact })
 			.then((response) => {
@@ -36,6 +40,7 @@ const ContactPane = () => {
 					success: false,
 					message: "Something went wrong. Try again later",
 				});
+				setSending(false);
 			});
 	};
 
@@ -153,6 +158,13 @@ const ContactPane = () => {
 									<button className="btn-outline-primary my-4 btn" type="submit">
 										Submit
 									</button>
+									{sending ? (
+										<span className="m-4 d-inline-block">
+											<ClipLoader size={30} color={"#1c3ae3"} loading />
+										</span>
+									) : (
+										""
+									)}
 								</form>
 							</div>
 						</div>

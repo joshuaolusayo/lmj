@@ -1,7 +1,7 @@
 const path = require("path");
 const buildPath = path.join(__dirname, "..", "build");
 const transporter = require("./config");
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
 
 const express = require("express");
@@ -49,6 +49,12 @@ app.post("/send", (req, res) => {
 	}
 });
 
-const PORT = process.env.PORT || 5000;
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get("*", (req, res) => {
+	res.sendFile(path.join(`${buildPath}/index.html`));
+});
+
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log("Server running"));

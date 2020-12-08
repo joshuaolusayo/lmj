@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
-import Helmet from "react-helmet";
+import  { Helmet, HelmetProvider } from "react-helmet-async";
 
 import componentLoader from "../Reusable Components/componentLoader";
 
@@ -28,17 +28,22 @@ const Homepage = () => {
 					</div>
 				}
 			>
-				<Helmet>
-					<title>Homepage - Welcome to Hon. Olamijuwonlo website</title>
-					<meta name="description" content="Honourable Olamijuwonlo Alao-Akala website" />
-					<meta name="keywords" content="Olamijuwonlo Alao-Akala, Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North" />
-				</Helmet>
-				<NavBar />
-				<Slides />
-				<About />
-				<BlogLatest />
-				<Footer />
-				<ScrollToTop />
+				<HelmetProvider>
+					<Helmet>
+						<title>Homepage - Welcome to Hon. Olamijuwonlo website</title>
+						<meta name="description" content="Honourable Olamijuwonlo Alao-Akala website" />
+						<meta
+							name="keywords"
+							content="Olamijuwonlo Alao-Akala, Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North"
+						/>
+					</Helmet>
+					<NavBar />
+					<Slides />
+					<About />
+					<BlogLatest />
+					<Footer />
+					<ScrollToTop />
+				</HelmetProvider>
 			</Suspense>
 		</div>
 	);
