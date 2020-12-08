@@ -68,14 +68,14 @@ const Footer = () => {
 					</div>
 					<div className="col-lg-3 d-flex flex-column justify-content-between my-5 my-lg-0">
 						<h3 className="text-light">Contact Us</h3>
-						<a className="text-muted py-2 py-lg-auto" href="tel:+234 816 308 7542">
-							+234 816 308 7542
+						<a className="text-muted py-2 py-lg-auto" href="tel:+234 816 222 2016">
+							+234 816 222 2016
 						</a>
 						<a className="text-muted py-2 py-lg-auto" href="mailto:info@lamijuakala.com">
 							info@lamijuakala.com
 						</a>
-						<a className="text-muted py-2 py-lg-auto" href="mailto:olamijuwonlo@gmail.com">
-							olamijuwonlo@gmail.com
+						<a className="text-muted py-2 py-lg-auto" href="mailto:contactolamiju@gmail.com">
+							contactolamiju@gmail.com
 						</a>
 						<span className="text-muted py-2 py-lg-auto">Randa, Ogbomoso, Oyo state, Nigeria</span>
 					</div>
