@@ -2,3 +2,5 @@
 
 /node-modules
 *.env
+
+// https://accounts.google.com/b/0/DisplayUnlockCaptcha - For granting account access
