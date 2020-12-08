@@ -1,6 +1,7 @@
 const path = require("path");
 const bodyParser = require("body-parser");
 const buildPath = path.join(__dirname, "..", "build");
+// const mailChimp = require("mailchimp-api-v3");
 const transporter = require("./config");
 const dotenv = require("dotenv");
 dotenv.config();
