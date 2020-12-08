@@ -1,7 +1,6 @@
 const path = require("path");
 const bodyParser = require("body-parser");
-const buildPath = path.join(__dirname, "..", "build");
-// const mailChimp = require("mailchimp-api-v3");
+const request = require("request");
 const transporter = require("./config");
 const dotenv = require("dotenv");
 dotenv.config();
@@ -9,9 +8,12 @@ dotenv.config();
 const express = require("express");
 const app = express();
 
+const buildPath = path.join(__dirname, "..", "build");
+
+// Middleware
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(buildPath));
-app.use(bodyParser.json());
 
 app.post("/send", (req, res) => {
 	try {
@@ -33,8 +35,6 @@ app.post("/send", (req, res) => {
 
 		transporter.sendMail(mailOptions, (err, info) => {
 			if (err) {
-				console.log(err);
-				console.log(err.message);
 				res.status(500).send({
 					success: false,
 					message: "Something went wrong. Try again later",
@@ -47,12 +47,45 @@ app.post("/send", (req, res) => {
 			}
 		});
 	} catch (err) {
-		console.log(err);
-		console.log(err.message);
 		res.status(500).send({
 			success: false,
 			message: "Something went wrong. Try again later",
 		});
+	}
+});
+
+app.post("/subscribe", (req, res) => {
+	const { email } = req.body;
+	const mcData = {
+		members: [
+			{
+				email_address: email,
+				status: "pending",
+			},
+		],
+	};
+
+	const mcDataPost = JSON.stringify(mcData);
+
+	const options = {
+		url: process.env.mailchimpUrl,
+		method: "POST",
+		headers: {
+			Authorization: `auth ${process.env.mailchimpApiKey}`
+		},
+		body: mcDataPost
+	};
+
+	if (email) {
+		request(options, (err, response, body) => {
+			if (err) {
+				res.json({ error: err });
+			} else {
+				res.sendStatus(200);
+			}
+		});
+	} else {
+		res.status(404).send({ message: "Failed" });
 	}
 });
 
