@@ -107,7 +107,7 @@ const AboutLMJ = () => {
 						<p data-aos="fade-right">
 							He loves farming and investing in Agriculture generally. He has farmlands where he practices crop production,
 							livestock rearing, and Agro real estate{" "}
-							<a className="text-primary" href="//umera.ng">
+							<a className="text-primary" href="//umera.ng" target="_blank" rel="noreferrer">
 								Agro real estate
 							</a>
 							.
