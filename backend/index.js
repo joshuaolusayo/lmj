@@ -1,4 +1,5 @@
 const path = require("path");
+const bodyParser = require("body-parser");
 const buildPath = path.join(__dirname, "..", "build");
 const transporter = require("./config");
 const dotenv = require("dotenv");
@@ -9,6 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.static(buildPath));
+app.use(bodyParser.json());
 
 app.post("/send", (req, res) => {
 	try {
@@ -30,6 +32,8 @@ app.post("/send", (req, res) => {
 
 		transporter.sendMail(mailOptions, (err, info) => {
 			if (err) {
+				console.log(err);
+				console.log(err.message);
 				res.status(500).send({
 					success: false,
 					message: "Something went wrong. Try again later",
@@ -42,6 +46,8 @@ app.post("/send", (req, res) => {
 			}
 		});
 	} catch (err) {
+		console.log(err);
+		console.log(err.message);
 		res.status(500).send({
 			success: false,
 			message: "Something went wrong. Try again later",
