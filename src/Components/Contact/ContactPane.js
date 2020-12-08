@@ -40,6 +40,8 @@ const ContactPane = () => {
 					success: false,
 					message: "Something went wrong. Try again later",
 				});
+			})
+			.finally(() => {
 				setSending(false);
 			});
 	};
