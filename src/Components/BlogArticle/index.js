@@ -6,11 +6,9 @@ import componentLoader from "../Reusable Components/componentLoader";
 
 const NavBar = lazy(() => componentLoader(() => import("../Reusable Components/Navbar")));
 const Article = lazy(() => componentLoader(() => import("./Article")));
-// const MoreArticles = lazy(() => componentLoader(() => import("./MoreArticles")));
+const MoreArticles = lazy(() => componentLoader(() => import("./MoreArticles")));
 const Subscribe = lazy(() => componentLoader(() => import("../Reusable Components/Subscribe")));
 const Footer = lazy(() => componentLoader(() => import("../Reusable Components/Footer")));
-
-
 
 const BlogArticle = () => {
 	const { pathname } = useLocation();
@@ -30,7 +28,7 @@ const BlogArticle = () => {
 			>
 				<NavBar />
 				<Article />
-				{/* <MoreArticles /> */}
+				<MoreArticles />
 				<Subscribe />
 				<Footer />
 			</Suspense>

@@ -354,9 +354,8 @@ body {
   text-decoration: none;
 }
 
-.blog-article .recent a:hover .card {
-  transition: all 300ms ease-in;
-  transform: scale(1.05);
+.blog-article .recent a:hover img {
+  filter: grayscale(100%);
 }
 
 .contact .contact-pane i {
@@ -367,6 +366,10 @@ body {
   display: inline-block;
   text-align: center;
   margin-right: 5px;
+}
+
+.contact .contact-pane button:focus {
+  box-shadow: none !important;
 }
 
 .contact input:focus,

@@ -15,12 +15,12 @@ const Subscribe = () => {
 		if (email !== "") {
 			axios
 				.post("/subscribe", { email })
-				.then((response) => {
+				.then(() => {
 					setEmail("");
 					setSending(false);
 					setSuccess(true);
 				})
-				.catch((err) => {
+				.catch(() => {
 					setSending(false);
 					setShowError(true);
 				})

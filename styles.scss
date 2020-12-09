@@ -384,9 +384,8 @@ body {
 			&:hover {
 				text-decoration: none;
 
-				.card {
-					transition: all 300ms ease-in;
-					transform: scale(1.05);
+				img {
+					filter: grayscale(100%);
 				}
 			}
 		}

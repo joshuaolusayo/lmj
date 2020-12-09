@@ -12,6 +12,8 @@
 		"body-parser": "^1.19.0",
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
+		"mongodb": "^3.6.3",
+		"morgan": "^1.10.0",
 		"nodemailer": "^6.4.16",
 		"npm-check-updates": "^10.2.2",
 		"react": "^17.0.1",
@@ -35,7 +37,7 @@
 		"web-vitals": "^0.2.4"
 	},
 	"scripts": {
-		"start": "node backend/index.js",
+		"start": "react-scripts start",
 		"heroku-postbuild": "cd backend && npm install && npm run build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",

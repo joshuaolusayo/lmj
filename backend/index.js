@@ -2,6 +2,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const request = require("request");
 const transporter = require("./config");
+const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -49,7 +50,7 @@ app.post("/send", (req, res) => {
 	} catch (err) {
 		res.status(500).send({
 			success: false,
-			message: "Something went wrong. Try again later",
+			message: "Coult not send your message. Try again later",
 		});
 	}
 });
@@ -71,9 +72,9 @@ app.post("/subscribe", (req, res) => {
 		url: process.env.mailchimpUrl,
 		method: "POST",
 		headers: {
-			Authorization: `auth ${process.env.mailchimpApiKey}`
+			Authorization: `auth ${process.env.mailchimpApiKey}`,
 		},
-		body: mcDataPost
+		body: mcDataPost,
 	};
 
 	if (email) {
@@ -93,6 +94,60 @@ app.post("/subscribe", (req, res) => {
 // match one above, send back React's index.html file.
 app.get("*", (req, res) => {
 	res.sendFile(path.join(`${buildPath}/index.html`));
+});
+
+// Connect to database
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/database", {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+});
+
+mongoose.connection.on("connected", () => console.log("mongoose is connected"));
+
+// Schema
+const Schema = mongoose.Schema;
+const BlogPostSchema = new Schema({
+	tag: String,
+	image: String,
+	heading: String,
+	date: {
+		type: String,
+		default: Date.now(),
+	},
+	quoteStart: String,
+	quoteStartAuthor: String,
+	quoteEnd: String,
+	quoteEndAuthor: String,
+	intro: String,
+	section: Object,
+});
+
+// Model
+const BlogPost = mongoose.model("BlogPost", BlogPostSchema);
+
+// Saving data to the database
+// const data = {};
+
+// const newBlogPost = new BlogPost(data); // instance of the model
+
+// newBlogPost.save((error) => {
+// 	if (error) {
+// 		console.log("An error happens");
+// 	} else {
+// 		console.log("Data stored to database");
+// 	}
+// });
+
+app.get("/api/v1", (req, res) => {
+	BlogPost.find({})
+		.then((data) => {
+			console.log(`Data: ${data}`);
+			res.json(data);
+		})
+		.catch((error) => {
+			console.log(error);
+		});
 });
 
 const PORT = process.env.PORT || 3000;

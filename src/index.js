@@ -10,15 +10,14 @@ import Gallery from "./Components/Gallery";
 import Homepage from "./Components/Homepage";
 
 // Redux setup
-import { createStore } from "redux";
-import { blogPosts } from "./reducers/blog-posts";
 import { Provider } from "react-redux";
+import store from "./store";
 
 // AOS setup
 import "./styles.css";
 import "aos/dist/aos.css";
 
-const store = createStore(blogPosts);
+
 
 ReactDOM.render(
 	<React.StrictMode>
