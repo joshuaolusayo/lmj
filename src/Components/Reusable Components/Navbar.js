@@ -59,7 +59,9 @@ const NavBar = () => {
 						<li className="nav-item">
 							<Link
 								className={`nav-link ${
-									location.pathname === "/blog" || location.pathname === "blog-article/:heading"
+									location.pathname === "/blog" ||
+									location.pathname === "/blog/" ||
+									location.pathname === "blog-article/:heading"
 										? "text-primary"
 										: "text-dark"
 								} d-inline-block p-4`}
