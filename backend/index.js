@@ -2,7 +2,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const request = require("request");
 const transporter = require("./config");
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
