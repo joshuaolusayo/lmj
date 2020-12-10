@@ -17,13 +17,14 @@ const MoreArticles = (props) => {
 			<div className="row">
 				{recentPosts.map((post, index) => (
 					<div key={index} className="col-md-6 col-lg-4 my-3">
-						<Link key={post.id} to={`/blog-article/${post.heading}`}>
+						<div key={post.id} to={`/blog-article/${post.heading}`}>
 							<div className="card mb-lg-4">
 								<img className="card-img-top" src={post.image} alt="LMJ" loading="lazy" />
 								<div className="card-body">
 									<h6 className="text-primary mb-3">{post.tag}</h6>
 									<h4 className="card-title text-black font-weight-bold">{post.heading}</h4>
 									<p className="card-text text-dark">{post.intro}</p>
+									<Link className="text-primary" key={post.id} to={`/blog-article/${post.heading}`}>Read more</Link>
 								</div>
 								<div className="card-footer text-muted border-0 bg-transparent">
 									<span>
@@ -31,7 +32,7 @@ const MoreArticles = (props) => {
 									</span>
 								</div>
 							</div>
-						</Link>
+						</div>
 					</div>
 				))}
 			</div>

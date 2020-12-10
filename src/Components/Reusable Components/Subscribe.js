@@ -10,9 +10,9 @@ const Subscribe = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setEmail(email);
-		setSending(true);
 
 		if (email !== "") {
+			setSending(true);
 			axios
 				.post("/subscribe", { email })
 				.then(() => {
@@ -28,8 +28,10 @@ const Subscribe = () => {
 					setTimeout(() => {
 						setSuccess(false);
 						setShowError(false);
-					}, 10000);
+					}, 5000);
 				});
+		} else {
+			setTimeout(setTimeout(() => setShowError(true), 3000));
 		}
 	};
 
@@ -50,9 +52,15 @@ const Subscribe = () => {
 								required
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 							/>
-							{sending ? <p className="lead mt-2 text-secondary">Subscribing...</p> : ""}
-							{showError ? <p className="lead mt-2 text-danger">Please, enter an email</p> : ""}
-							{success ? <p className="lead mt-2 text-light">Please, confirm your email address</p> : ""}
+							{showError ? (
+								<p className="lead mt-2 text-danger">Please, enter an email</p>
+							) : sending ? (
+								<p className="lead mt-2 text-secondary">Subscribing...</p>
+							) : success ? (
+								<p className="lead mt-2 text-light">Please, confirm your email address</p>
+							) : (
+								""
+							)}
 							<button id="submit" className="btn bg-primary__light text-light p-2 rounded-bottom" type="submit">
 								Submit
 							</button>
