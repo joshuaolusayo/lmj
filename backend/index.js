@@ -1,9 +1,13 @@
 const path = require("path");
 const bodyParser = require("body-parser");
-const request = require("request");
 const transporter = require("./config");
 const dotenv = require("dotenv");
 dotenv.config();
+
+const mailgun = require("mailgun-js")({
+	apiKey: process.env.mailgunApiKey,
+	domain: process.env.mailgunDomain,
+});
 
 const express = require("express");
 const app = express();
@@ -19,10 +23,10 @@ app.post("/send", (req, res) => {
 	try {
 		const mailOptions = {
 			from: req.body.email,
-			to: process.env.email,
+			to: "contactolamiju@gmail.com",
 			subject: req.body.subject,
 			html: `
-            <p>You have a new contact request</p>
+            <p>You have a new message</p>
             <h3>Contact Details</h3>
             <ul>
                 <li>Name: ${req.body.name}</li>
@@ -49,44 +53,34 @@ app.post("/send", (req, res) => {
 	} catch (err) {
 		res.status(500).send({
 			success: false,
-			message: "Coult not send your message. Try again later",
+			message: "Could not send your message. Try again later",
 		});
 	}
 });
 
 app.post("/subscribe", (req, res) => {
 	const { email } = req.body;
-	const mcData = {
-		members: [
-			{
-				email_address: email,
-				status: "pending",
-			},
-		],
+	let list = mailgun.lists("subscribers@sandboxf9d5adcb705f4a9cb76b60cc4d035bdf.mailgun.org");
+
+	const newMember = {
+		subscribed: true,
+		address: email,
+		upsert: "yes",
 	};
 
-	const mcDataPost = JSON.stringify(mcData);
+	list.members().create(newMember, function (err, data) {
+		if (err) {
+			console.log("error");
+			res.status(404).send({ subscribed: "Failed" });
+		} else {
+			res.sendStatus(200);
+		}
+	});
 
-	const options = {
-		url: process.env.mailchimpUrl,
-		method: "POST",
-		headers: {
-			Authorization: `auth ${process.env.mailchimpApiKey}`,
-		},
-		body: mcDataPost,
-	};
-
-	if (email) {
-		request(options, (err, response, body) => {
-			if (err) {
-				res.json({ error: err });
-			} else {
-				res.sendStatus(200);
-			}
-		});
-	} else {
-		res.status(404).send({ message: "Failed" });
-	}
+	list.members().list(function (err, members) {
+		// `members` is the list of members
+		console.log(members);
+	});
 });
 
 // The "catchall" handler: for any request that doesn't

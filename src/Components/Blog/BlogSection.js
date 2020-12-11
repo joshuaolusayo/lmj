@@ -10,25 +10,26 @@ const BlogSection = (props) => {
 	}, []);
 
 	return props.posts ? (
-		<div className="container blog-section my-5">
+		<div className="container blog-section my-6">
 			<h2 className="font-weight-bold mb-4">Blog Articles</h2>
-			<div className="card-columns">
-				{props.posts.map((post) => (
-					<Link key={post.id} to={`/blog-article/${post.heading}`}>
-						<div className="card mb-lg-4">
+			<div className="row">
+				{props.posts.map((post, index) => (
+					<div key={index} className="col-md-6 col-lg-4 post h-100 my-3">
+						<div className="card mb-lg-4 border-0 shadow-sm">
 							<img className="card-img-top" src={post.image} alt="LMJ" loading="lazy" />
-							<div className="card-body">
-								<h6 className="text-primary mb-3">{post.tag}</h6>
-								<h4 className="card-title text-black font-weight-bold">{post.heading}</h4>
-								<p className="card-text text-dark">{post.intro}</p>
+							<div className="card-header pt-4 bg-transparent border-0">
+								<span className="bg-primary px-2 text-center text-light d-inline-block rounded text-sm">{post.tag}</span>
 							</div>
-							<div className="card-footer text-muted border-0 bg-transparent">
-								<span>
-									<i className="fa fa-clock-o"></i> {post.date}
-								</span>
+							<div className="card-body py-2">
+								<h4 className="card-title text-black font-weight-bold mb-0 limit">{post.heading}</h4>
+							</div>
+							<div className="card-footer pb-4 text-muted border-0 bg-transparent">
+								<Link className="text-primary" key={post.id} to={`/blog-article/${post.heading}`}>
+									Read more
+								</Link>
 							</div>
 						</div>
-					</Link>
+					</div>
 				))}
 			</div>
 		</div>

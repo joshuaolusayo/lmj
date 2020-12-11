@@ -16,7 +16,7 @@ const Banner = () => {
 				data-aos="zoom-out"
 			>
 				<h1 className="font-weight-bold">Welcome to my blog</h1>
-				<p className="text-secondary">Humanity | Farming | Politics</p>
+				<p className="text-secondary">Humanity | Agriculture | Politics</p>
 			</div>
 		</div>
 	);

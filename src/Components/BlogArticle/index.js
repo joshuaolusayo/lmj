@@ -9,6 +9,7 @@ const Article = lazy(() => componentLoader(() => import("./Article")));
 const MoreArticles = lazy(() => componentLoader(() => import("./MoreArticles")));
 const Subscribe = lazy(() => componentLoader(() => import("../Reusable Components/Subscribe")));
 const Footer = lazy(() => componentLoader(() => import("../Reusable Components/Footer")));
+const ScrollToTop = lazy(() => componentLoader(() => import("../Reusable Components/ScrollToTop")));
 
 const BlogArticle = () => {
 	const { pathname } = useLocation();
@@ -31,6 +32,7 @@ const BlogArticle = () => {
 				<MoreArticles />
 				<Subscribe />
 				<Footer />
+				<ScrollToTop />
 			</Suspense>
 		</div>
 	);

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
 import { ClipLoader } from "react-spinners";
 import AOS from "aos";
 import axios from "axios";
@@ -16,13 +15,12 @@ const ContactPane = () => {
 		subject: "",
 	});
 
-	const { register, handleSubmit } = useForm();
-
 	const [result, setResult] = useState(null);
 
 	const [sending, setSending] = useState(false);
 
-	const getForm = () => {
+	const getForm = (e) => {
+		e.preventDefault();
 		setSending(true);
 		axios
 			.post("/send", { ...contact })
@@ -90,7 +88,7 @@ const ContactPane = () => {
 								<h2 className="text-primary">Send a message</h2>
 								<p className="text-muted">Feel free to drop a message for us below</p>
 								{result && <p className={`${result.success ? "text-success" : "text-danger"}`}>{result.message}</p>}
-								<form onClick={handleSubmit(getForm)}>
+								<form onSubmit={getForm}>
 									<div className="form-group mb-0">
 										<label htmlFor="name"></label>
 										<input
@@ -104,8 +102,8 @@ const ContactPane = () => {
 											id="name"
 											aria-describedby="emailHelpId"
 											placeholder="Fullname"
-											ref={register({ required: true, maxLength: 40 })}
 											autoComplete="on"
+											required
 										/>
 									</div>
 									<div className="form-group mb-0">
@@ -121,8 +119,8 @@ const ContactPane = () => {
 											id="email"
 											aria-describedby="emailHelpId"
 											placeholder="Email"
-											ref={register({ required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })}
 											autoComplete="on"
+											required
 										/>
 									</div>
 									<div className="form-group mb-0">
@@ -138,8 +136,8 @@ const ContactPane = () => {
 											id="subject"
 											aria-describedby="emailHelpId"
 											placeholder="Subject"
-											ref={register({ required: true, maxLength: 80 })}
 											autoComplete="on"
+											required
 										/>
 									</div>
 									<div className="form-group mb-0">
@@ -154,7 +152,7 @@ const ContactPane = () => {
 											id="message"
 											rows="5"
 											placeholder="Your message"
-											ref={register({ required: true, maxLength: 300 })}
+											required
 										></textarea>
 									</div>
 									<button className="btn-outline-primary my-4 btn" type="submit">

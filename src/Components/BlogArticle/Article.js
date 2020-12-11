@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { connect } from "react-redux";
 import { useParams } from "react-router";
 import { fetchArticle } from "../../actions/blogActions";
+
+import componentLoader from "../Reusable Components/componentLoader";
+
+const ShareArticle = lazy(() => componentLoader(() => import("./ShareArticle")));
 
 const Article = (props) => {
 	let params = useParams();
@@ -64,35 +68,7 @@ const Article = (props) => {
 								<span>- {article.quoteEndAuthor}</span>
 							</div>
 
-							<div className="mt-5 d-flex flex-column justify-content-center align-items-center share">
-								<h4 className="mb-3">Share this post</h4>
-								<div>
-									<a
-										href="javascript;;"
-										className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary"
-									>
-										<i className="fa fa-facebook"></i>
-									</a>
-									<a
-										href="javascript;;"
-										className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary"
-									>
-										<i className="fa fa-twitter"></i>
-									</a>
-									<a
-										href="javascript;;"
-										className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary"
-									>
-										<i className="fa fa-linkedin"></i>
-									</a>
-									<a
-										href="javascript;;"
-										className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary"
-									>
-										<i className="fa fa-instagram"></i>
-									</a>
-								</div>
-							</div>
+							<ShareArticle tag={article.tag} heading={article.heading} img={article.image} intro={article.intro} />
 						</div>
 					</div>
 				</div>

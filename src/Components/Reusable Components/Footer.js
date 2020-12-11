@@ -17,7 +17,7 @@ const Footer = () => {
 							from him, you can keep checking here. Beware of fraudsters.
 						</p>
 						<p className="pr-lg-5">
-							Follow us:&nbsp;
+							Follow me:&nbsp;
 							<a
 								href="http://www.facebook.com/lamijuakala"
 								className="mx-2 d-inline-block link text-center rounded-circle"

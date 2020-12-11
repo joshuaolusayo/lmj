@@ -53,11 +53,11 @@ const Subscribe = () => {
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 							/>
 							{showError ? (
-								<p className="lead mt-2 text-danger">Please, enter an email</p>
+								<p className="lead mt-2 text-danger">Please, try again</p>
 							) : sending ? (
 								<p className="lead mt-2 text-secondary">Subscribing...</p>
 							) : success ? (
-								<p className="lead mt-2 text-light">Please, confirm your email address</p>
+								<p className="lead mt-2 text-light">Thanks for subscribing to my newsletter</p>
 							) : (
 								""
 							)}

@@ -14,7 +14,7 @@ const BlogLatest = (props) => {
 	const post = props.post;
 	return post ? (
 		<div className="container-fluid px-0">
-			<div className="container my-5 my-lg-8 blog-latest">
+			<div className="container my-6 my-lg-8 blog-latest">
 				<h3 className="font-weight-bold mb-4">Latest blog post</h3>
 				<div className="row">
 					<div className="col-lg-6 mb-3 mb-lg-5">
@@ -30,15 +30,15 @@ const BlogLatest = (props) => {
 				</div>
 			</div>
 
-			<div className="blog-news" style={{ background: `url('/images/lmj-sit.jpg') no-repeat` }}>
-				<div className="overlay w-100 h-100 py-5">
+			<div className="blog-news" style={{ background: `url('/images/lmj001.jpg') no-repeat` }}>
+				<div className="overlay w-100 h-100 py-6 py-lg-8">
 					<div className="container d-flex flex-column h-100 justify-content-center align-items-start">
 						<h2 className="text-light font-weight-bold">Blog News</h2>
 						<div className="row">
-							<div className="col-md-6 col-lg-4 my-3">
-								<div className="card shadow h-100" data-aos="fade-up">
+							<div className="col-lg-4 my-3">
+								<div className="card border-0 shadow h-100" data-aos="fade-up">
 									<img className="card-img-top" src="/images/lmj013.JPG" alt="LMJ receiving certificate" />
-									<div className="card-body">
+									<div className="card-body d-flex flex-column justify-content-between">
 										<h4 className="card-title font-weight-bold">Politics</h4>
 										<p className="card-text">
 											Praying and hoping for change is not enough to birth the new Nigeria we are expecting. It is
@@ -46,16 +46,18 @@ const BlogLatest = (props) => {
 											politician committed to serving the community, my engagement is to ensure a new Nigeria we can
 											all be proud of is born.
 										</p>
-										<Link to="/blog" className="bg-primary__light text-secondary__light btn more">
-											Explore
-										</Link>
+										<div className="mb-0">
+											<Link to="/blog" className="bg-dark text-light btn more">
+												Read more in Blog
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div className="col-md-6 col-lg-4 my-3">
-								<div className="card shadow h-100" data-aos="fade-up">
+							<div className="col-lg-4 my-3">
+								<div className="card border-0 shadow h-100" data-aos="fade-up">
 									<img className="card-img-top" src="/images/lmj-on-farm.jpg" alt="Farmland" />
-									<div className="card-body">
+									<div className="card-body d-flex flex-column justify-content-between">
 										<h4 className="card-title font-weight-bold">Agriculture</h4>
 										<p className="card-text">
 											One of the core needs of man is food. By providing food for the nation, farmers do not only
@@ -63,16 +65,18 @@ const BlogLatest = (props) => {
 											work effectively through the provision of farm products. I am glad to be part of this noble
 											profession.
 										</p>
-										<Link to="/blog" className="bg-primary__light text-secondary__light btn more">
-											Explore
-										</Link>
+										<div className="mb-0">
+											<Link to="/blog" className="bg-dark text-light btn more">
+												Read more in Blog
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div className="col-md-6 col-lg-4 my-3">
-								<div className="card shadow h-100" data-aos="fade-up">
+							<div className="col-lg-4 my-3">
+								<div className="card border-0 shadow h-100" data-aos="fade-up">
 									<img className="card-img-top" src="/images/lmj012.JPG" alt="LMJ with primary school pupils" />
-									<div className="card-body">
+									<div className="card-body d-flex flex-column justify-content-between">
 										<h4 className="card-title font-weight-bold">Philanthropy</h4>
 										<p className="card-text">
 											I do not see giving to others as a thing only specific people can do. If a nation will grow, it
@@ -81,9 +85,11 @@ const BlogLatest = (props) => {
 											towards the growth and development of the community. I do not only believe this, but I practice
 											it also.
 										</p>
-										<Link to="/blog" className="bg-primary__light text-secondary__light btn more">
-											Explore
-										</Link>
+										<div className="mb-0">
+											<Link to="/blog" className="bg-dark text-light btn more">
+												Read more in Blog
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>

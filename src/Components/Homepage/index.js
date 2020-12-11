@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
-import  { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import componentLoader from "../Reusable Components/componentLoader";
 

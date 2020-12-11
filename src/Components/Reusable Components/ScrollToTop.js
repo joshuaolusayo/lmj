@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
 	const [showScroll, setShowScroll] = useState(false);
-	const [mount, setMount] = useState(false);
+	const { pathname } = useLocation();
 
 	const scrollTop = () => {
 		window.scrollTo({
@@ -13,13 +14,9 @@ const ScrollToTop = () => {
 
 	useEffect(() => {
 		window.addEventListener("scroll", checkScrollTop);
-		setMount(true);
 
-		return () => {
-			setMount(false);
-		};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [mount]);
+	}, [pathname, showScroll]);
 
 	const checkScrollTop = () => {
 		if (!showScroll && window.pageYOffset > 300) {
@@ -29,7 +26,7 @@ const ScrollToTop = () => {
 		}
 	};
 
-	if (mount) {
+	if (showScroll) {
 		return (
 			<span className={`bg-light rounded-circle shadow ${showScroll ? "d-block" : "d-none"}`} id="scrollTop" onClick={scrollTop}>
 				<i className="fa fa-arrow-up text-primary"></i>
@@ -38,11 +35,6 @@ const ScrollToTop = () => {
 	} else {
 		return "";
 	}
-	// return (
-	// 	<span className={`bg-light rounded-circle shadow ${showScroll ? "d-block" : "d-none"}`} id="scrollTop" onClick={scrollTop}>
-	// 		<i className="fa fa-arrow-up text-primary"></i>
-	// 	</span>
-	// );
 };
 
 export default ScrollToTop;
