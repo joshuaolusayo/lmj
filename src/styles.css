@@ -384,7 +384,11 @@ body {
   overflow: hidden;
   height: 4.5em;
   line-height: 1.5em;
-  font-size: 1.3em;
+}
+
+.blog-section .row .post .limit.card-title,
+.recent .row .post .limit.card-title {
+  font-size: 1em;
 }
 
 .blog-section .row .post a,

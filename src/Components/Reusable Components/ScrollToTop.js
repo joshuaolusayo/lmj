@@ -16,7 +16,7 @@ const ScrollToTop = () => {
 		window.addEventListener("scroll", checkScrollTop);
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [pathname, showScroll]);
+	}, [pathname]);
 
 	const checkScrollTop = () => {
 		if (!showScroll && window.pageYOffset > 300) {
@@ -26,15 +26,11 @@ const ScrollToTop = () => {
 		}
 	};
 
-	if (showScroll) {
-		return (
-			<span className={`bg-light rounded-circle shadow ${showScroll ? "d-block" : "d-none"}`} id="scrollTop" onClick={scrollTop}>
-				<i className="fa fa-arrow-up text-primary"></i>
-			</span>
-		);
-	} else {
-		return "";
-	}
+	return (
+		<span className={`bg-light rounded-circle shadow ${showScroll ? "d-block" : "d-none"}`} id="scrollTop" onClick={scrollTop}>
+			<i className="fa fa-arrow-up text-primary"></i>
+		</span>
+	);
 };
 
 export default ScrollToTop;

@@ -14,24 +14,24 @@ const ShareArticle = ({ tag, title, img, intro }) => {
 			<h4 className="mb-3">Share this post</h4>
 			<div>
 				<FacebookShareButton url={param.url} quote={title} hashtag={tag}>
-					<btn className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
+					<div className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
 						<i className="fa fa-facebook text-light"></i>
-					</btn>
+					</div>
 				</FacebookShareButton>
 				<TwitterShareButton url={param.url} title={title} hashtags={tag}>
-					<btn className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
+					<div className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
 						<i className="fa fa-twitter text-light"></i>
-					</btn>
+					</div>
 				</TwitterShareButton>
 				<LinkedinShareButton url={param.url} title={title} summary={intro} source={param.url}>
-					<btn className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
+					<div className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
 						<i className="fa fa-linkedin text-light"></i>
-					</btn>
+					</div>
 				</LinkedinShareButton>
 				<WhatsappShareButton url={param.url} title={title}>
-					<btn className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
+					<div className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
 						<i className="fa fa-whatsapp text-light"></i>
-					</btn>
+					</div>
 				</WhatsappShareButton>
 			</div>
 		</div>

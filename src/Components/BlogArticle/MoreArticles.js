@@ -24,6 +24,7 @@ const MoreArticles = (props) => {
 							</div>
 							<div className="card-body py-2">
 								<h4 className="card-title text-black font-weight-bold mb-0 limit">{post.heading}</h4>
+								<p className="card-text text-dark limit">{post.intro}</p>
 							</div>
 							<div className="card-footer pb-4 text-muted border-0 bg-transparent">
 								<Link className="text-primary" key={post.id} to={`/blog-article/${post.heading}`}>

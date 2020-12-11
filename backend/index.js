@@ -60,7 +60,7 @@ app.post("/send", (req, res) => {
 
 app.post("/subscribe", (req, res) => {
 	const { email } = req.body;
-	let list = mailgun.lists("subscribers@sandboxf9d5adcb705f4a9cb76b60cc4d035bdf.mailgun.org");
+	let list = mailgun.lists(process.env.mailgunList);
 
 	const newMember = {
 		subscribed: true,
@@ -75,11 +75,6 @@ app.post("/subscribe", (req, res) => {
 		} else {
 			res.sendStatus(200);
 		}
-	});
-
-	list.members().list(function (err, members) {
-		// `members` is the list of members
-		console.log(members);
 	});
 });
 
