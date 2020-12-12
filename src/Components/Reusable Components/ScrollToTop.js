@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
 	const [showScroll, setShowScroll] = useState(false);
-	const { pathname } = useLocation();
 
 	const scrollTop = () => {
 		window.scrollTo({
@@ -15,8 +13,13 @@ const ScrollToTop = () => {
 	useEffect(() => {
 		window.addEventListener("scroll", checkScrollTop);
 
+		return () => {
+			setShowScroll(false);
+			window.removeEventListener("scroll", checkScrollTop);
+		};
+
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [pathname]);
+	}, []);
 
 	const checkScrollTop = () => {
 		if (!showScroll && window.pageYOffset > 300) {

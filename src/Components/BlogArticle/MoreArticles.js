@@ -15,8 +15,8 @@ const MoreArticles = (props) => {
 		<div className="container mb-8 recent">
 			<h4 className="font-weight-bold text-dark">Recent Posts</h4>
 			<div className="row">
-				{recentPosts.map((post, index) => (
-					<div key={index} className="col-md-6 col-lg-4 post h-100 my-3">
+				{recentPosts.map((post) => (
+					<div key={post._id} className="col-md-6 col-lg-4 post h-100 my-3">
 						<div className="card mb-lg-4 border-0 shadow-sm">
 							<img className="card-img-top" src={post.image} alt="LMJ" loading="lazy" />
 							<div className="card-header pt-4 bg-transparent border-0">

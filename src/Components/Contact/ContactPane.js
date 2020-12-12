@@ -49,10 +49,9 @@ const ContactPane = () => {
 			className="container-fluid px-0 banner w-100 d-flex justify-content-center align-items-center contact-pane"
 			style={{
 				background: `linear-gradient(rgba(28, 58, 227, 0.7), rgba(28, 58, 227, 0.7)), url('/images/contact-bg.jpg') 40% 60%`,
-				height: "700px",
 			}}
 		>
-			<div className="container px-3 px-sm-auto">
+			<div className="container px-3 px-sm-auto my-5 my-lg-8">
 				<div className="row no-gutters">
 					<div className="col-md-8 col-lg-10 mx-auto bg-light px-0">
 						<div className="row w-100 h-100 flex-column flex-lg-row no-gutters">
