@@ -1,18 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchLatest } from "../../actions/blogActions";
+import { isEmpty } from "lodash";
 import AOS from "aos";
 
 const BlogLatest = (props) => {
+	const [loading, setLoading] = useState(true);
 	useEffect(() => {
-		AOS.init({ duration: 500, once: true });
-		props.fetchLatest();
+		if (loading) {
+			AOS.init({ duration: 500, once: true });
+			props.fetchLatest().then(() => setLoading(false));
+		}
+
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [loading]);
 
 	const post = props.post;
-	return post ? (
+
+	return !loading && !isEmpty(post) ? (
 		<div className="container-fluid px-0">
 			<div className="container my-6 my-lg-8 blog-latest">
 				<h3 className="font-weight-bold mb-4">Latest blog post</h3>

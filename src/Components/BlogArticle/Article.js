@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { connect } from "react-redux";
 import { useParams } from "react-router";
 import { fetchArticle } from "../../actions/blogActions";
+import { isEmpty } from "lodash";
 
 import componentLoader from "../Reusable Components/componentLoader";
 
@@ -11,20 +12,23 @@ const ShareArticle = lazy(() => componentLoader(() => import("./ShareArticle")))
 const Article = (props) => {
 	let params = useParams();
 	const [loading, setLoading] = useState(true);
+	const [prevRoute, setPrevRoute] = useState("");
 
 	useEffect(() => {
-		const fetchData = async () => {
-			await props.fetchArticle(params.heading);
-			setLoading(false);
-		};
+		if (prevRoute && window.location.href !== prevRoute) {
+			setLoading(true);
+		}
 
-		fetchData();
+		if (loading) {
+			setPrevRoute(window.location.href);
+			props.fetchArticle(params.heading).then(() => setLoading(false));
+		}
+
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [params.heading]);
+	}, [window.location.href, loading]);
 
 	const article = props.article;
-
-	return !loading ? (
+	return !loading && !isEmpty(article) ? (
 		<HelmetProvider>
 			<div className="container-fluid article px-0">
 				<Helmet>
@@ -75,6 +79,7 @@ const Article = (props) => {
 			</div>
 		</HelmetProvider>
 	) : (
+		// <div>Loaded</div>
 		<div className="my-5 text-center lead">Loading...</div>
 	);
 };

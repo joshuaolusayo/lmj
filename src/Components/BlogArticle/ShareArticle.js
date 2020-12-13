@@ -18,7 +18,7 @@ const ShareArticle = ({ tag, title, img, intro }) => {
 						<i className="fa fa-facebook text-light"></i>
 					</div>
 				</FacebookShareButton>
-				<TwitterShareButton url={param.url} title={title} hashtags={tag}>
+				<TwitterShareButton url={param.url} title={title}>
 					<div className="d-inline-block rounded-circle bg-primary text-center mx-2 btn-outline-secondary link">
 						<i className="fa fa-twitter text-light"></i>
 					</div>

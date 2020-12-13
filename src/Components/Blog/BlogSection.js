@@ -1,20 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchPosts } from "../../actions/blogActions";
 
 const BlogSection = (props) => {
+	const [loading, setLoading] = useState(true);
 	useEffect(() => {
-		props.fetchPosts();
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+		if (loading) {
+			props.fetchPosts().then(() => setLoading(false));
+		}
 
-	return props.posts ? (
+		return () => setLoading(false);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [loading]);
+
+	return !loading && props.posts.length ? (
 		<div className="container blog-section my-6">
 			<h2 className="font-weight-bold mb-4">Blog Articles</h2>
 			<div className="row">
-				{props.posts.map((post) => (
-					<div key={post._id} className="col-md-6 col-lg-4 post h-100 my-3">
+				{props.posts.map((post, index) => (
+					<div key={index} className="col-md-6 col-lg-4 post h-100 my-3">
 						<div className="card mb-lg-4 border-0 shadow-sm">
 							<img className="card-img-top" src={post.image} alt="LMJ" loading="lazy" />
 							<div className="card-header pt-4 bg-transparent border-0">

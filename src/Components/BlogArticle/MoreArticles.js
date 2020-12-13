@@ -1,22 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchRecent } from "../../actions/blogActions";
 
 const MoreArticles = (props) => {
+	const [loading, setLoading] = useState(true);
 	useEffect(() => {
-		props.fetchRecent();
+		if (loading) {
+			props.fetchRecent().then(() => setLoading(false));
+		}
+
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [loading]);
 
 	const recentPosts = props.recentPosts;
 
-	return recentPosts ? (
+	return !loading && recentPosts.length ? (
 		<div className="container mb-8 recent">
 			<h4 className="font-weight-bold text-dark">Recent Posts</h4>
 			<div className="row">
-				{recentPosts.map((post) => (
-					<div key={post._id} className="col-md-6 col-lg-4 post h-100 my-3">
+				{recentPosts.map((post, index) => (
+					<div key={index} className="col-md-6 col-lg-4 post h-100 my-3">
 						<div className="card mb-lg-4 border-0 shadow-sm">
 							<img className="card-img-top" src={post.image} alt="LMJ" loading="lazy" />
 							<div className="card-header pt-4 bg-transparent border-0">
