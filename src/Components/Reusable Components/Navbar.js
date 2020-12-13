@@ -36,7 +36,13 @@ const NavBar = () => {
 					ref={btn}
 					onClick={() => setShow(!show)}
 				>
-					{!show ? <span className="navbar-toggler-icon"></span> : <span>X</span>}
+					{!show ? (
+						<span className="navbar-toggler-icon"></span>
+					) : (
+						<span>
+							<i className="fa fa-times"></i>
+						</span>
+					)}
 				</button>
 				<div className="collapse navbar-collapse justify-content-lg-end" id="collapsibleNavId">
 					<ul className="navbar-nav mr-auto mr-md-0 h-100">

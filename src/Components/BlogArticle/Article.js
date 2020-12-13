@@ -34,6 +34,7 @@ const Article = (props) => {
 				<Helmet>
 					<title>{article.heading}</title>
 					<meta name="description" content={article.heading} />
+					<meta name="author" content="Joshua Oyeleke" />
 					<meta name="keywords" content={`${article.heading}, ${article.tag}`} />
 				</Helmet>
 				<div

@@ -36,6 +36,7 @@ const Blog = () => {
 							name="keywords"
 							content="Olamijuwonlo Alao-Akala blog, Honourable Olamijuwonlo blog, lamijuakala blog, Olamiju blog"
 						/>
+						<meta name="author" content="Oyeleke, Joshua Oluwasayo" />
 					</Helmet>
 					<NavBar />
 					<Banner />

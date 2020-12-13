@@ -13,13 +13,13 @@ const ScrollToTop = () => {
 	useEffect(() => {
 		window.addEventListener("scroll", checkScrollTop);
 
-		return () => {
-			setShowScroll(false);
+		return (() => {
 			window.removeEventListener("scroll", checkScrollTop);
-		};
+		})
+		
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [window.location.href, showScroll]);
 
 	const checkScrollTop = () => {
 		if (!showScroll && window.pageYOffset > 300) {

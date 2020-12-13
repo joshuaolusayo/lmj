@@ -32,6 +32,7 @@ const Homepage = () => {
 					<Helmet>
 						<title>Homepage - Welcome to Hon. Olamijuwonlo website</title>
 						<meta name="description" content="Honourable Olamijuwonlo Alao-Akala website" />
+						<meta name="description" content="Joshua Oyeleke" />
 						<meta
 							name="keywords"
 							content="Olamijuwonlo Alao-Akala, Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North"

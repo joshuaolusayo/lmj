@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 import Galleries from "./Galleries";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // import GalleryGrid from "./GalleryGrid";
 
 import componentLoader from "../Reusable Components/componentLoader";
@@ -26,11 +27,22 @@ const Gallery = () => {
 					</div>
 				}
 			>
-				<NavBar />
-				<Galleries />
-				{/* <GalleryGrid /> */}
-				<Footer />
-				<ScrollToTop />
+				<HelmetProvider>
+					<Helmet>
+						<title>Gallery</title>
+						<meta name="description" content="Hon Olamijuwonlo Alao-Akala Picture Gallery" />
+						<meta name="author" content="Joshua Oyeleke" />
+						<meta
+							name="keywords"
+							content="Olamijuwonlo Alao-Akala Picture, Honourable Olamijuwonlo Gallery, lamijuakala, Chairman Ogbomoso North, Lamijuakala pictures"
+						/>
+					</Helmet>
+					<NavBar />
+					<Galleries />
+					{/* <GalleryGrid /> */}
+					<Footer />
+					<ScrollToTop />
+				</HelmetProvider>
 			</Suspense>
 		</div>
 	);

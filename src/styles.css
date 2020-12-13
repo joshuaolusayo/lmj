@@ -88,6 +88,10 @@ body {
   }
 }
 
+.navbar .fa-times {
+  font-size: 2rem;
+}
+
 .navbar .logo,
 .footer .logo {
   width: 80px;

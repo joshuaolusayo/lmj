@@ -30,6 +30,7 @@ const Contact = () => {
 					<Helmet>
 						<title>Contact me</title>
 						<meta name="description" content="Contact Hon Olamijuwonlo Alao-Akala" />
+						<meta name="author" content="Joshua Oyeleke" />
 						<meta
 							name="keywords"
 							content="Contact Olamijuwonlo Alao-Akala, Contact Honourable Olamijuwonlo, lamijuakala, Chairman Ogbomoso North, Hon Olamijuwonlo Alao phone number, Olamijuwonlo Alao email address"
