@@ -26,7 +26,7 @@ const AboutLMJ = () => {
 					nation at large.
 				</p>
 
-				<div className="row align-items-center my-6">
+				<div className="row align-items-center my-5 my-lg-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Background</h2>
 						<p data-aos="fade-right">
@@ -50,7 +50,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6">
+				<div className="row align-items-center my-5 my-lg-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Education</h2>
 						<p data-aos="fade-right">
@@ -73,7 +73,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6">
+				<div className="row align-items-center my-5 my-lg-6">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Marital life</h2>
 						<p data-aos="fade-right">
@@ -92,7 +92,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6" id="business">
+				<div className="row align-items-center my-5 my-lg-6" id="business">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Business Career</h2>
 						<p data-aos="fade-right">
@@ -123,7 +123,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6" id="politics">
+				<div className="row align-items-center my-5 my-lg-6" id="politics">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Political Career</h2>
 						<p data-aos="fade-right">
@@ -155,7 +155,7 @@ const AboutLMJ = () => {
 					</div>
 				</div>
 
-				<div className="row align-items-center my-6" id="philanthropy">
+				<div className="row align-items-center my-5 my-lg-6" id="philanthropy">
 					<div className="col-lg-8">
 						<h2 className="font-weight-bold">Philanthropic Service</h2>
 						<p data-aos="fade-right">

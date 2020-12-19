@@ -88,10 +88,6 @@ body {
   }
 }
 
-.navbar .fa-times {
-  font-size: 2rem;
-}
-
 .navbar .logo,
 .footer .logo {
   width: 80px;
@@ -312,7 +308,7 @@ body {
 
 .homepage .blog-news .overlay .more:hover {
   background: #1c3ae3 !important;
-  color: #e3c51c;
+  color: #fff !important;
 }
 
 .aboutPage .overflow-x-hidden {

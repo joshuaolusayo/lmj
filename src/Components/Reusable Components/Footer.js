@@ -21,28 +21,32 @@ const Footer = () => {
 							<a
 								href="http://www.facebook.com/lamijuakala"
 								className="mx-2 d-inline-block link text-center rounded-circle"
-								rel="nofollow"
+								rel="noreferrer"
+								target="_blank"
 							>
 								<i className="fa fa-facebook"></i>
 							</a>
 							<a
 								href="http://www.instagram.com/lamijuakala"
 								className="mx-2 d-inline-block link text-center rounded-circle"
-								rel="nofollow"
+								rel="noreferrer"
+								target="_blank"
 							>
 								<i className="fa fa-instagram"></i>
 							</a>
 							<a
 								href="http://www.twitter.com/lamijuakala"
 								className="mx-2 d-inline-block link text-center rounded-circle"
-								rel="nofollow"
+								rel="noreferrer"
+								target="_blank"
 							>
 								<i className="fa fa-twitter"></i>
 							</a>
 							<a
 								href="https://www.linkedin.com/in/olamijuwonlo-alao-akala-665671b0/"
 								className="mx-2 d-inline-block link text-center rounded-circle"
-								rel="nofollow"
+								rel="noreferrer"
+								target="_blank"
 							>
 								<i className="fa fa-linkedin"></i>
 							</a>
@@ -71,10 +75,10 @@ const Footer = () => {
 						<a className="text-muted py-2 py-lg-auto" href="tel:+234 816 222 2016">
 							+234 816 222 2016
 						</a>
-						<a className="text-muted py-2 py-lg-auto" href="mailto:info@lamijuakala.com">
-							info@lamijuakala.com
+						<a className="text-muted py-2 py-lg-auto" href="mailto:info@olamijuwonlo.com" target="_blank" rel="noreferrer">
+							info@olamijuwonlo.com
 						</a>
-						<a className="text-muted py-2 py-lg-auto" href="mailto:contactolamiju@gmail.com">
+						<a className="text-muted py-2 py-lg-auto" href="mailto:contactolamiju@gmail.com" target="_blank" rel="noreferrer">
 							contactolamiju@gmail.com
 						</a>
 						<span className="text-muted py-2 py-lg-auto">Randa, Ogbomoso, Oyo state, Nigeria</span>

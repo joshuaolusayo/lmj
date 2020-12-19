@@ -99,10 +99,6 @@ body {
 			align-items: center;
 		}
 	}
-
-	.fa-times {
-		font-size: 2rem;
-	}
 }
 
 .navbar,
@@ -332,7 +328,7 @@ body {
 			.more {
 				&:hover {
 					background: $primary-col !important;
-					color: $secondary-col;
+					color: #fff !important;
 				}
 			}
 		}

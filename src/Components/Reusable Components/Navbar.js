@@ -20,9 +20,9 @@ const NavBar = () => {
 
 	return (
 		<header className="container-fluid px-0 shadow bg-transparent navbar">
-			<nav className="container navbar navbar-expand-lg navbar-light px-2 py-0 px-lg-0 justify-content-between align-items-center">
+			<nav className="container navbar navbar-expand-lg navbar-light px-3 py-0 px-lg-0 justify-content-between align-items-center">
 				<Link className="navbar-brand font-weight-bold text-primary" to="/">
-					<img className="logo" src="/images/logo-white-bg.jpeg" alt="LMJ logo" />
+					<img className="logo" src="/images/logo.png" alt="LMJ logo" />
 				</Link>
 				<button
 					className="navbar-toggler d-lg-none p-0 border-0"
@@ -37,18 +37,18 @@ const NavBar = () => {
 					onClick={() => setShow(!show)}
 				>
 					{!show ? (
-						<span className="navbar-toggler-icon"></span>
+						<img style={{ height: "50px" }} src="/images/menu.png" alt="Open nav button" />
 					) : (
-						<span>
-							<i className="fa fa-times"></i>
-						</span>
+						<img style={{ height: "50px" }} src="/images/multiply.png" alt="Close nav button" />
 					)}
 				</button>
 				<div className="collapse navbar-collapse justify-content-lg-end" id="collapsibleNavId">
 					<ul className="navbar-nav mr-auto mr-md-0 h-100">
 						<li className="nav-item">
 							<Link
-								className={`nav-link ${location.pathname === "/" ? "text-primary" : "text-dark"} d-inline-block p-4`}
+								className={`nav-link ${
+									location.pathname === "/" ? "text-primary" : "text-dark"
+								} d-inline-block p-4 font-weight-bold`}
 								to="/"
 							>
 								Home
@@ -56,7 +56,9 @@ const NavBar = () => {
 						</li>
 						<li className="nav-item">
 							<Link
-								className={`nav-link ${location.pathname === "/about" ? "text-primary" : "text-dark"} d-inline-block p-4`}
+								className={`nav-link ${
+									location.pathname === "/about" ? "text-primary" : "text-dark"
+								} d-inline-block p-4 font-weight-bold`}
 								to="/about"
 							>
 								About
@@ -70,7 +72,7 @@ const NavBar = () => {
 									location.pathname === "blog-article/:heading"
 										? "text-primary"
 										: "text-dark"
-								} d-inline-block p-4`}
+								} d-inline-block p-4 font-weight-bold`}
 								to="/blog"
 							>
 								Blog
@@ -78,7 +80,9 @@ const NavBar = () => {
 						</li>
 						<li className="nav-item">
 							<Link
-								className={`nav-link ${location.pathname === "/gallery" ? "text-primary" : "text-dark"} d-inline-block p-4`}
+								className={`nav-link ${
+									location.pathname === "/gallery" ? "text-primary" : "text-dark"
+								} d-inline-block p-4 font-weight-bold`}
 								to="/gallery"
 							>
 								Gallery
@@ -86,7 +90,9 @@ const NavBar = () => {
 						</li>
 						<li className="nav-item">
 							<Link
-								className={`nav-link ${location.pathname === "/contact" ? "text-primary" : "text-dark"} d-inline-block p-4`}
+								className={`nav-link ${
+									location.pathname === "/contact" ? "text-primary" : "text-dark"
+								} d-inline-block p-4 font-weight-bold`}
 								to="/contact"
 							>
 								Contact

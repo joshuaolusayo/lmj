@@ -22,8 +22,8 @@ const BlogLatest = (props) => {
 		<div className="container-fluid px-0">
 			<div className="container my-6 my-lg-8 blog-latest">
 				<h3 className="font-weight-bold mb-4">Latest blog post</h3>
-				<div className="row">
-					<div className="col-lg-6 mb-3 mb-lg-5">
+				<div className="row align-items-stretch">
+					<div className="col-lg-6 mb-3 mb-lg-0">
 						<img className="w-100" src={post.image} alt={post.heading} />
 					</div>
 					<div className="col-lg-6">
